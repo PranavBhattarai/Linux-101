@@ -1,4 +1,4 @@
-<pre><font color="#4E9A06"><b>pranav@inspiron-5548</b></font>:<font color="#3465A4"><b>~</b></font>$ systemd-analyze blame
+pranav@inspiron-5548:~$ systemd-analyze blame
          34.555s plymouth-quit-wait.service
          18.432s mysql.service
          15.307s snapd.service
@@ -82,7 +82,7 @@
           1.128s snap-chromium\x2dffmpeg-13.mount
           1.102s snap-gnome\x2dcharacters-296.mount
           1.091s snap-gnome\x2d3\x2d28\x2d1804-63.mount
-          1.091s systemd-fsck@dev-disk-by\x2duuid-81af9024\x2d5c08\x2d4055\x2d94
+          1.091s systemd-fsck@dev-disk-by\x2duuid-81af9024\x2d5c08\x2d4055\x2d9423\x2d12d0674fc723.service
            998ms snap-core18-1049.mount
            900ms snap-gnome\x2dcalculator-406.mount
            870ms systemd-tmpfiles-setup.service
@@ -126,30 +126,6 @@
            229ms plymouth-start.service
            227ms dns-clean.service
            212ms pppd-dns.service
-           189ms dev-disk-by\x2duuid-09e25397\x2d4a2c\x2d4fb0\x2da605\x2da7013ee
-           158ms console-setup.service
-           156ms ifupdown-pre.service
-           152ms snap-musixmatch-14.mount
-           125ms snap-android\x2dstudio-76.mount
-           122ms systemd-update-utmp.service
-           118ms systemd-tmpfiles-clean.service
-           115ms user@1000.service
-            98ms snap-gnome\x2dsystem\x2dmonitor-95.mount
-            82ms bolt.service
-            79ms rtkit-daemon.service
-            79ms snap-telegram\x2ddesktop-818.mount
-            62ms systemd-journal-flush.service
-            31ms setvtrgb.service
-            26ms resolvconf-pull-resolved.service
-            26ms snapd.socket
-            20ms user-runtime-dir@1000.service
-            17ms systemd-update-utmp-runlevel.service
-             6ms systemd-rfkill.service
-             6ms dev-hugepages.mount
-             3ms sys-fs-fuse-connections.mount
-             3ms networking.service
-             3ms sys-kernel-config.mount
-<span style="background-color:#FFFFFF"><font color="#003059">lines 128-150/150 (END)</font></span>
            189ms dev-disk-by\x2duuid-09e25397\x2d4a2c\x2d4fb0\x2da605\x2da7013eecb59c.swap
            158ms console-setup.service
            156ms ifupdown-pre.service
@@ -173,31 +149,3 @@
              3ms sys-fs-fuse-connections.mount
              3ms networking.service
              3ms sys-kernel-config.mount
-<b>~</b>
-<b>~</b>
-<b>~</b>
-<span style="background-color:#FFFFFF"><font color="#003059">lines 128-150/150 (END)</font></span>
-           189ms dev-disk-by\x2duuid-09e25397\x2d4a2c\x2d4fb0\x2da605\x2da7013eecb59c.swap
-           158ms console-setup.service
-           156ms ifupdown-pre.service
-           152ms snap-musixmatch-14.mount
-           125ms snap-android\x2dstudio-76.mount
-           122ms systemd-update-utmp.service
-           118ms systemd-tmpfiles-clean.service
-           115ms user@1000.service
-            98ms snap-gnome\x2dsystem\x2dmonitor-95.mount
-            82ms bolt.service
-            79ms rtkit-daemon.service
-            79ms snap-telegram\x2ddesktop-818.mount
-            62ms systemd-journal-flush.service
-            31ms setvtrgb.service
-            26ms resolvconf-pull-resolved.service
-            26ms snapd.socket
-            20ms user-runtime-dir@1000.service
-            17ms systemd-update-utmp-runlevel.service
-             6ms systemd-rfkill.service
-             6ms dev-hugepages.mount
-             3ms sys-fs-fuse-connections.mount
-             3ms networking.service
-             3ms sys-kernel-config.mount
-</pre>
