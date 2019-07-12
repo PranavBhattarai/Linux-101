@@ -1,0 +1,20 @@
+<pre><font color="#4E9A06"><b>pranav@inspiron-5548</b></font>:<font color="#3465A4"><b>~</b></font>$ systemd-analyze critical-chain
+The time after the unit is active or started is printed after the &quot;@&quot; character.
+The time the unit takes to start is printed after the &quot;+&quot; character.
+
+graphical.target @1min 7.426s
+└─multi-user.target @1min 7.426s
+  └─<font color="#CC0000"><b>mysql.service @32.501s +18.432s</b></font>
+    └─network.target @32.270s
+      └─<font color="#CC0000"><b>NetworkManager.service @25.299s +6.971s</b></font>
+        └─dbus.service @25.210s
+          └─basic.target @25.132s
+            └─sockets.target @25.132s
+              └─<font color="#CC0000"><b>snapd.socket @25.101s +26ms</b></font>
+                └─sysinit.target @25.028s
+                  └─<font color="#CC0000"><b>apparmor.service @21.992s +3.036s</b></font>
+                    └─local-fs.target @21.987s
+                      └─<font color="#CC0000"><b>boot-efi.mount @21.602s +384ms</b></font>
+                        └─<font color="#CC0000"><b>systemd-fsck@dev-disk-by\x2duuid-8A05\x2dF7D6.service @19.477s +2.082s</b></font>
+                          └─dev-disk-by\x2duuid-8A05\x2dF7D6.device @19.476s
+</pre>
