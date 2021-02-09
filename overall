@@ -22,8 +22,7 @@ sudo apt-key del "<key>"					//delete that key.
 
 6.updatedb							// to update "locate" command database so it doesn't show deleted file
 
-7.
-mv pranav.txt bhattarai.txt						//will rename pranav to bhattarai
+7.mv pranav.txt bhattarai.txt						//will rename pranav to bhattarai
 
 8. XAMPP:  Another web server with SSL is already running.
 sudo /etc/init.d/apache2 stop						//if its failed to start Apache.
