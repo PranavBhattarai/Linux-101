@@ -1,0 +1,60 @@
+-7. aprospos <what command u want to know>
+
+-6. dmesg | grep -i firmware			// will tell something related to firmware.
+
+-5. Set enviroment variable in Fish. Example:
+set PATH $HOME/.cargo/bin/ $PATH			// for temporary enviroment variable.
+set -U fish_user_paths $HOME/.cargo/bin			// for permanent enviroment variable.
+
+-4. Reset/refresh DHCP/IP/Network setting
+sudo dhclient -r					//to rest dhcp, I guess
+sudo dhcp						//to get new IP. 
+ip addr flush dev eth0	//If 2nd cmd say, "File already exits".
+sudo /etc/init.d/networking restart		//to apply/refresh OR
+sudo systemctl restart networkmanager.service
+
+To know more: https://netplan.io/examples/
+
+-3. Find Zombie process which gone rouge
+ps aux | grep "Z|defunct"		//display the child process id
+ps -o pid= <Child PID> 			//display parent PID of that child
+kill -9 <Parent PID>			//killed what we wanted.
+
+-2. sudo apt-key list		//list out all trusted keys
+sudo apt-key del "<key>"  	//delete that key.
+
+-1. Refresh "locate" command show that it still show deleted files
+updatedb
+
+0. To get error log of mobile form PC
+adb logcat > logcat.txt
+
+1.
+mv pranav.txt bhattarai.txt	//will rename pranav to bhattarai
+
+2. Q) XAMPP:  Another web server with SSL is already running.
+sudo /etc/init.d/apache2 stop   //if its failed to start Apache.
+Ans: sudo /opt/lampp/lampp start
+
+2.1 If "sudo mysql" throws an error in terminal, then:
+sudo sytemctl start mysql.service
+
+3.
+Cltr + L	//Clear the terminal.
+
+4.
+systemctl disable vmware	//will disable all vmware services
+systemctl start vmware		//will start all vmware services
+
+5. Services that I have disabled.
+sudo systemctl disable windscribe-cli.service
+sudo systemctl disable vmware-workstation-server.service
+sudo systemctl disable vboxdrv.service
+sudo systemctl disable snapd.service
+sudo systemctl disable vmware-USBArbitrator.service
+sudo systemclt disable tomcat9
+sudo systemctl disable nordvpnd.service
+
+7. Refresh display server in Wayland. (might work but not tested yet.)
+systemctl stop gdm
+systemctl stop gdm
