@@ -1,6 +1,6 @@
 To disable Trackpad or Tocuhscreen, others, we can do this typing:
-xinput list                       //To see ID number
-xinput disable <ID number>        //For example, "xinput disable 10" will disable my touch pad.
+xinput list                       	//To see ID number
+xinput disable <ID number>        	//For example, "xinput disable 10" will disable my touch pad.
 
 To list all system and user Gnome extensions:
 ls -d -1 /usr/share/gnome-shell/extensions/* ~/.local/share/gnome-shell/extensions/* 
