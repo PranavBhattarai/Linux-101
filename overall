@@ -1,33 +1,32 @@
 1. aprospos <what command u want to know>
 
-2. dmesg | grep -i firmware						// will tell something related to firmware.
+2. dmesg | grep -i firmware					// will tell something related to firmware.
 
 3. Set enviroment variable in Fish. Example:
 set PATH $HOME/.cargo/bin/ $PATH				// for temporary enviroment variable.
-set -U fish_user_paths $HOME/.cargo/bin			// for permanent enviroment variable.
+set -U fish_user_paths $HOME/.cargo/bin				// for permanent enviroment variable.
 
 4. Reset/refresh DHCP/IP/Network setting
-sudo dhclient -r								//to rest dhcp, I guess
-sudo dhcp										//to get new IP. 
-ip addr flush dev eth0							//If 2nd cmd say, "File already exits".
+sudo dhclient -r						//to rest dhcp, I guess
+sudo dhcp							//to get new IP. 
+ip addr flush dev eth0						//If 2nd cmd say, "File already exits".
 sudo /etc/init.d/networking restart				//to apply/refresh OR
 sudo systemctl restart networkmanager.service
 
 5. Find Zombie process which gone rouge
-ps aux | grep "Z|defunct"						//display the child process id
-ps -o pid= <Child PID> 							//display parent PID of that child
-kill -9 <Parent PID>							//killed what we wanted.
-sudo apt-key list								//list out all trusted keys
-sudo apt-key del "<key>"  						//delete that key.
+ps aux | grep "Z|defunct"					//display the child process id
+ps -o pid= <Child PID> 						//display parent PID of that child
+kill -9 <Parent PID>						//killed what we wanted.
+sudo apt-key list						//list out all trusted keys
+sudo apt-key del "<key>"					//delete that key.
 
-6. Refresh "locate" command, so that it doesn't show deleted files
-updatedb
+6.updatedb							// to update "locate" command database so it doesn't show deleted file
 
 7.
 mv pranav.txt bhattarai.txt						//will rename pranav to bhattarai
 
 8. XAMPP:  Another web server with SSL is already running.
-sudo /etc/init.d/apache2 stop   				//if its failed to start Apache.
+sudo /etc/init.d/apache2 stop						//if its failed to start Apache.
 sudo /opt/lampp/lampp start
 
 9.Cltr + L									//Clear the terminal.
