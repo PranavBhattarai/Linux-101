@@ -15,7 +15,7 @@ sudo systemctl restart networkmanager.service
 
 5. Find Zombie process which gone rouge
 ps aux | grep "Z|defunct"					//display the child process id
-ps -o pid= <Child PID> 						//display parent PID of that child
+ps -o pid= <Child PID>						//display parent PID of that child
 kill -9 <Parent PID>						//killed what we wanted.
 sudo apt-key list						//list out all trusted keys
 sudo apt-key del "<key>"					//delete that key.
@@ -89,9 +89,9 @@ ps aux | grep -i apt
 sudo kill -9 <process id>
 
 21. Change java enviroment variable:
-export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64     		//for java 8
-export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64    		//for java 11
-export JAVA_HOME=/usr/lib/jvm/default-java      				//for default selected java
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64		//for java 8
+export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64		//for java 11
+export JAVA_HOME=/usr/lib/jvm/default-java			//for default selected java
 
 22. Git setup: 
 sudo add-apt-repository ppa:git-core/ppa  
@@ -102,3 +102,7 @@ git config --global user.email "<email-address"
 23. Fix Broken Install
 sudo dpkg --configure -a
 sudo apt-get install -f
+
+24. Remove grub-rescue and keep Windows only using Live Ubuntu
+sudo apt install lilo
+sudo lilo -M /dev/sda mbr
