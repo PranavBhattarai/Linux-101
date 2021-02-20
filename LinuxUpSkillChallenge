@@ -1,3 +1,12 @@
+sudo adduser pragya	//to add a new user
+
+df			//disk free commmand to know about disk state
+
+wc			//word count
+wc -l			//count all lines
+
+ss -4			//socket status using ipv4
+ss -6			//socket status using ipv6
 
 find /home/pranav -name Penuma.mp3
-find /home/pranav -mtime -3		//
+find /home/pranav -mtime -3		//3 days

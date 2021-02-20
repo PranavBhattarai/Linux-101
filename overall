@@ -106,3 +106,7 @@ sudo apt-get install -f
 24. Remove grub-rescue and keep Windows only using Live Ubuntu
 sudo apt install lilo
 sudo lilo -M /dev/sda mbr
+
+25. less file.txt				// to read file in terminal by scrolling one by one
+
+
