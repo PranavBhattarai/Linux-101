@@ -1,12 +1,33 @@
 sudo adduser pragya	//to add a new user
+sudo passwd pragya	//Change the password
+
+// Note: new user can't run 'sudo' commands with elevated privileges by default.
+// Any such attempts are reported in log for administrative user to see.
+// We could add Pragya to a group that is pre-defined, to able to use sudo to
+// do anything as root - but we don't want to give such super power to Pragya, do we?
+
+whoami		//see which user I am currently
+su - pragya	//will swtich to named Pragya 
+exit		//will switch back to Pranav if you are in Pragya, else close the terminal.
+logut		//will switch back to Pranav
+su - pranav	//will swtich back to Pranav
+su -		//will switch to Root user
+
+usermod -aG sudo pragya		//Pragya will also have all admin right. Not Recommanded
+sudo deluser pragya sudo	//Pragya will no longer have admin right.
+
+less			//read output serially
+
 
 df			//disk free commmand to know about disk state
 
 wc			//word count
 wc -l			//count all lines
 
-ss -4			//socket status using ipv4
-ss -6			//socket status using ipv6
+
+ss -4				//socket status using ipv4
+ss -6				//socket status using ipv6
 
 find /home/pranav -name Penuma.mp3
-find /home/pranav -mtime -3		//3 days
+
+
