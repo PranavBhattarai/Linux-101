@@ -29,3 +29,11 @@ pcm.!default {
    type plug
    slave.pcm hw
 }
+
+
+Step 3:
+
+pulseaudio -k && sudo alsa force-reload
+
+
+Enjoy.
