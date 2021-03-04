@@ -1,6 +1,6 @@
 # Linux101
-Clean and maintaing my Linux distro.
-I usually prefer non-LTS Ubuntu as my daily driver.
+This repo is my way to clean and maintain my Linux distro. <br>
+I usually prefer non-LTS Ubuntu as my daily driver.<br><br>
 
 These are some commands that I used to makes things work.
 This is a backup if incase it gets lost.
