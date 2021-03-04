@@ -6,7 +6,7 @@ These are some commands that I used to makes things work.
 This is <b><i>just</i></b> a backup if incase it gets lost.
 
 
-<b><u>My fav custom shortkey are:</u></b><br>
+<b>My fav custom shortkey are:</b><br>
 Super + A = Close the Window<br>
 Super + B = Open the Browser<br>
 Super + W = Open the Terminal<br>

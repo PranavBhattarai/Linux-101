@@ -22,13 +22,13 @@ sudo apt-key del "<key>"					//delete that key.
 
 6.updatedb							// to update "locate" command database so it doesn't show deleted file
 
-7.mv pranav.txt bhattarai.txt						//will rename pranav to bhattarai
+7.mv pranav.txt bhattarai.txt					//will rename pranav to bhattarai
 
 8. XAMPP:  Another web server with SSL is already running.
-sudo /etc/init.d/apache2 stop						//if its failed to start Apache.
+sudo /etc/init.d/apache2 stop					//if its failed to start Apache.
 sudo /opt/lampp/lampp start
 
-9.Cltr + L									//Clear the terminal.
+9.Cltr + L							//Clear the terminal.
 
 10.
 sytemctl start mysql					
@@ -46,7 +46,7 @@ sudo systemctl disable nordvpnd.service
 
 
 11. Refresh display server in Wayland.
-systemctl restart gdm							//This will close all apps. Be careful.
+systemctl restart gdm						//This will close all apps. Be careful.
 
 
 12. To list all system and user Gnome extensions:
@@ -94,8 +94,8 @@ export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64		//for java 11
 export JAVA_HOME=/usr/lib/jvm/default-java			//for default selected java
 
 22. Git setup: 
-sudo add-apt-repository ppa:git-core/ppa  
-apt update; apt install git 
+sudo add-apt-repository ppa:git-core/ppa
+apt update; apt install git
 git config --global user.name "<username>"
 git config --global user.email "<email-address"
 
@@ -107,6 +107,4 @@ sudo apt-get install -f
 sudo apt install lilo
 sudo lilo -M /dev/sda mbr
 
-25. less file.txt				// to read file in terminal by scrolling one by one
-
-
+25. less file.txt					//read file in terminal by scrolling lines
