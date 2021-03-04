@@ -3,7 +3,7 @@ This repo is my way to clean and maintain my Linux distro. <br>
 I usually prefer non-LTS Ubuntu as my daily driver.<br><br>
 
 These are some commands that I used to makes things work.
-This is a <b><i>just</i></b> backup if incase it gets lost.
+This is <b><i>just</i></b> a backup if incase it gets lost.
 
 
 <b>My fav custom shortkey are:</b><br>
