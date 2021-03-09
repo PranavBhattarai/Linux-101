@@ -108,3 +108,9 @@ sudo apt install lilo
 sudo lilo -M /dev/sda mbr
 
 25. less file.txt					//read file in terminal by scrolling lines
+
+26. Shutdown
+sudo shutdown now					//Shutdown immeditately
+sudo shutdwon 15:30					//Shutdown at 3:30 PM
+sudo shutdown +99					//Shutdown after 99 minutes
+sudo shutdown -c					//Cancel scheduled shutdown
