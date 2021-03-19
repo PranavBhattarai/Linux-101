@@ -114,3 +114,11 @@ sudo shutdown now					//Shutdown immeditately
 sudo shutdwon 15:30					//Shutdown at 3:30 PM
 sudo shutdown +99					//Shutdown after 99 minutes
 sudo shutdown -c					//Cancel scheduled shutdown
+
+27. Make a compact GNOME panel with no gap [NOT RECOMMANDED]
+sudo nano /usr/share/themes/Yaru-dark/gnome-shell/gnome-shell.css
+
+Search ".panel-button" and change these values:
+ -natural-hpadding: 0;
+ -minimum-hpadding: 0;
+
