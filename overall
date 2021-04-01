@@ -122,3 +122,11 @@ Search ".panel-button" and change these values:
  -natural-hpadding: 0;
  -minimum-hpadding: 0;
 
+28. Add/Substract/Multiply in fish shell:
+
+math 2 + 2	//4	space is not madatory between numbers
+math 2 - 2	//0	space is not madatory between numbers
+math 2 x 3	//6	space is madatory between numbers
+
+
+
