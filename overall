@@ -128,5 +128,9 @@ math 2 + 2	//4	space is not madatory between numbers
 math 2 - 2	//0	space is not madatory between numbers
 math 2 x 3	//6	space is madatory between numbers
 
+29. Firefox
 
+firefox --private-window
+firefox --private-window github.com
 
+30.
