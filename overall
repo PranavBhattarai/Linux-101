@@ -133,4 +133,9 @@ math 2 x 3	//6	space is madatory between numbers
 firefox --private-window
 firefox --private-window github.com
 
-30.
+30. Update my Github fork from Orignal repo
+
+git remote add original <link of original repo>
+git fetch original
+git merger original/master
+git push
