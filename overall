@@ -28,7 +28,9 @@ sudo apt-key del "<key>"					//delete that key.
 sudo /etc/init.d/apache2 stop					//if its failed to start Apache.
 sudo /opt/lampp/lampp start
 
-9.Cltr + L							//Clear the terminal.
+9.
+Cltr + L							//Clear the histroy of commands which ran in terminal.
+Ctrl + U							//Clear what you writing in the terminal
 
 10.
 sytemctl start mysql					
@@ -149,3 +151,28 @@ git
 33. Jump to last line in nano
 
 Ctrl + W + Ctrl + V
+
+
+34. List out all software which are using a package
+
+apt-cache rdepends --installed <package-name>
+
+
+35. Wipe Windows using DISKPART
+
+list disk
+select disk <>
+list partition
+select partition <>
+delete partition
+delete partition override			// force delete
+
+36. See disk partition style
+
+sudo parted -l
+
+
+37. See last updated or installed packages
+
+cat /var/log/dpkg.log | grep "\upgrade\ "
+cat /var/log/dpkg.log | grep "\install\ "
