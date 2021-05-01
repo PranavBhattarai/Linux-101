@@ -176,3 +176,10 @@ sudo parted -l
 
 cat /var/log/dpkg.log | grep "\upgrade\ "
 cat /var/log/dpkg.log | grep "\install\ "
+
+38. See short manually using Curl [needs internet]
+
+	curl cheat.sh/<things-you-want-to-know>
+
+example:
+	curl cheat.sh/fsck			//tell you about fsck in short
