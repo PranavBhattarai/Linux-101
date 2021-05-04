@@ -183,3 +183,10 @@ cat /var/log/dpkg.log | grep "\install\ "
 
 example:
 	curl cheat.sh/fsck			//tell you about fsck in short
+
+39. Read logs for debugging or reporting errors.
+
+journalctl -r						//will go logs in reverse
+journalctl --vacuum-time=2d				//will keeps logs which are 2 days old
+journalctl --flush					//will wipe all logs
+dmesg
