@@ -125,41 +125,31 @@ Search ".panel-button" and change these values:
  -minimum-hpadding: 0;
 
 28. Add/Substract/Multiply in fish shell:
-
 math 2 + 2	//4	space is not madatory between numbers
 math 2 - 2	//0	space is not madatory between numbers
 math 2 x 3	//6	space is madatory between numbers
 
 29. Firefox
-
 firefox --private-window
 firefox --private-window github.com
 
 30. Update my Github fork from Orignal repo
-
 git remote add original <link of original repo>
 git fetch original
 git merger original/master
 git push
 
 31. Difference between my Github repo Vs Orignnal repo
-
 git branch -a				// to see all branch available to compare
 git 
 
-
 33. Jump to last line in nano
-
 Ctrl + W + Ctrl + V
 
-
 34. List out all software which are using a package
-
 apt-cache rdepends --installed <package-name>
 
-
 35. Wipe Windows using DISKPART
-
 list disk
 select disk <>
 list partition
@@ -168,9 +158,7 @@ delete partition
 delete partition override			// force delete
 
 36. See disk partition style
-
 sudo parted -l
-
 
 37. See last updated or installed packages
 
@@ -185,7 +173,6 @@ example:
 	curl cheat.sh/fsck			//tell you about fsck in short
 
 39. Read logs for debugging or reporting errors.
-
 journalctl -r						//will go logs in reverse
 journalctl --vacuum-time=2d				//will keeps logs which are 2 days old
 journalctl --flush					//will wipe all logs
