@@ -1,6 +1,7 @@
 # Linux101
 This repo is my way to clean and maintain my Linux distro. <br>
-I usually prefer non-LTS Ubuntu as my daily driver.<br><br>
+~~ I usually prefer non-LTS Ubuntu as my daily driver.~~<br><br>
+After 2 years on Ubuntu, I distro hopped to Fedora (34).
 
 These are some commands that I used to makes things work.
 This is <b><i>just</i></b> a backup if incase it gets lost.
