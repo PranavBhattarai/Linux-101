@@ -1,3 +1,11 @@
-1. Create Gracefull shutdown
-Inside /etc/sysctl.d/90-sysrq.conf & write:
+1. Enable Gracefull shutdown
+Inside /etc/sysctl.d/pranav-sysrq.conf file write:
 kernel.sysrq=1
+Now it works. To do press:
+Alt + PrtScr + REISUB or REISUO
+
+2. Create udev rule/script to block damanged USB port:
+Inside /usr/local/bin/pranav-rule.sh file write:
+
+
+

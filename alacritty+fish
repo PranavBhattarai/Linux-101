@@ -1,0 +1,19 @@
+1. Create alacritty.yml file inside ~/.config/alacritty
+
+2. Install npm to Alacritty themes and run
+npx alacritty-themes --create			//optional
+npx alacritty-themes				//to select themes
+I prefer .... theme. 
+
+3. Alacritty background opacity, write:
+background_opacity: 0.90
+
+4. Alacritty Window size:
+window:
+  dimensions:
+    columns: 70
+    lines: 25
+
+5. For changing fish themes, from terminal:
+fish_config colors				//and select theme you like
+I prefer Lava theme.
