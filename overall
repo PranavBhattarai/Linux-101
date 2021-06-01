@@ -177,3 +177,5 @@ journalctl -r						//will go logs in reverse
 journalctl --vacuum-time=2d				//will keeps logs which are 2 days old
 journalctl --flush					//will wipe all logs
 dmesg
+
+40. cd -					// Jump back to another directory tree where I was
