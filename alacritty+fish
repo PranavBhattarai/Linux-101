@@ -3,7 +3,7 @@
 2. Install npm to Alacritty themes and run
 npx alacritty-themes --create			//optional
 npx alacritty-themes				//to select themes
-I prefer .... theme. 
+I prefer Dracula theme. 
 
 3. Alacritty background opacity, write:
 background_opacity: 0.90
@@ -15,5 +15,5 @@ window:
     lines: 25
 
 5. For changing fish themes, from terminal:
-fish_config colors				//and select theme you like
+fish_config colors				//and select theme
 I prefer Lava theme.
