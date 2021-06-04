@@ -6,6 +6,13 @@ Alt + PrtScr + REISUB or REISUO
 
 2. Create udev rule/script to block damanged USB port:
 Inside /usr/local/bin/pranav-rule.sh file write:
+<need-to-learn-about-this>
+
+3. Alternative of deborphan in Fedroa
+package-cleanup --leaves	//need to install dnf-utils first
+package-ckeanup --leaves --all
+sudo dnf autoremove		//to remove unneccessary packages
+
 
 
 
