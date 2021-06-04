@@ -1,9 +1,10 @@
 1. Create alacritty.yml file inside ~/.config/alacritty
 
-2. Install npm to Alacritty themes and run
-npx alacritty-themes --create			//optional
-npx alacritty-themes				//to select themes
-I prefer Dracula theme. 
+2. Install npm for Alacritty themes & run
+npx alacritty-themes --create		//optional
+npx alacritty-themes			//select themes
+I prefer Dracula theme.			
+Now you can uninstall npm if you want.
 
 3. Alacritty background opacity, write:
 background_opacity: 0.90
