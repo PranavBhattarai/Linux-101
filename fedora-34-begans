@@ -23,5 +23,7 @@ sudo deplist <package-name>
 6. See display protocol AKA desktop session in use
 echo $XDG_SESSION_TYPE
 
-7. Grep the output lines before & after word matches, example:
-sudo dmseg | grep -B 4 -A 4 'psmouse'
+7. Grep the lines before & after word matches, example:
+sudo dmseg | grep -B 4 -A 4 'psmouse'	
+
+5.
