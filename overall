@@ -1,4 +1,4 @@
-1. aprospos <what command u want to know>
+. aprospos <what command u want to know>
 
 2. dmesg | grep -i firmware					// will tell something related to firmware.
 
@@ -178,4 +178,9 @@ journalctl --vacuum-time=2d				//will keeps logs which are 2 days old
 journalctl --flush					//will wipe all logs
 dmesg
 
-40. cd -					// Jump back to another directory tree where I was
+40. cd -					// Jump back to previous directory tree where I was
+
+41. Find a file from a particular folder
+	find /path/of/folder -type f -name filename
+example:
+	find /home/pranav/Android -type f -name adb	//will search adb executable file inside Android folder
