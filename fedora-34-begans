@@ -10,15 +10,15 @@ Inside /usr/local/bin/pranav-rule.sh file write:
 <need-to-learn-about-this>
 
 3. Alternative of deborphan in Fedroa
-package-cleanup --leaves	//need to install dnf-utils first, or
+package-cleanup --leaves		//need to install dnf-utils first, or
 package-ckeanup --leaves --all
-sudo dnf autoremove		//to remove unneccessary packages
+sudo dnf autoremove			//to remove unneccessary packages
 
 4. See details about the package
 dnf info <package-name>
 
 5. See dependency of a package
-sudo deplist <package-name>
+
 
 6. See display protocol AKA desktop session in use
 echo $XDG_SESSION_TYPE
@@ -26,4 +26,14 @@ echo $XDG_SESSION_TYPE
 7. Grep the lines before & after word matches, example:
 sudo dmseg | grep -B 4 -A 4 'psmouse'	
 
-5.
+8. Regular expressing using Grep to search patterns, example:
+lscpi -k | grep -EA 'VGA|3D|Display'				
+
+9. Environment variables
+printenv			//show all env variables
+
+10. Grep multiple words
+journalctl -k | grep -i -e usb -e error -e warning -e failed
+
+11. Show today journal/log only
+journalctl -k

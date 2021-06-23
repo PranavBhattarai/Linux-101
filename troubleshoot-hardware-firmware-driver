@@ -1,0 +1,7 @@
+#These issue are under my hardware. Created after Fedora 34.
+
+1. Failed with  libva error, driver_name = (null) error when trying to launch Freezer from termainl.
+
+set -U LIBVA_DRIVER_NAME iHD		//verify using env command.
+
+2. 
