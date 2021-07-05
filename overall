@@ -163,6 +163,9 @@ sudo parted -l
 37. See last updated or installed packages
 
 cat /var/log/dpkg.log | grep "\upgrade\ "
+
+
+
 cat /var/log/dpkg.log | grep "\install\ "
 
 38. See short manually using Curl [needs internet]
@@ -184,3 +187,7 @@ dmesg
 	find /path/of/folder -type f -name filename
 example:
 	find /home/pranav/Android -type f -name adb	//will search adb executable file inside Android folder
+
+42. Find process ID aka PID of an app
+
+pidof firefox
