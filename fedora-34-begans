@@ -37,3 +37,6 @@ journalctl -k | grep -i -e usb -e error -e warning -e failed
 
 11. Show today journal/log only
 journalctl -k
+
+12. Update Grub
+sudo grub2-mkconfig --output=/boot/grub2/grub.cfg
