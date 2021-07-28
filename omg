@@ -1,0 +1,7 @@
+/- This file includes interesting unique find out which might be very helpfull depending upon different situation -\
+
+1. How to google "pranav" in such a we don't get famous 'pranav mukherjee'
+
+pranav -mukherjee		// here minus will remove search results which include 'mukherjee'
+
+2. 
