@@ -1,0 +1,32 @@
+Step 1: Navigate to where you downloaded the .deb file:
+
+    Right click a blank area in the folders section, select "Open in Terminal"
+    FROM THE TERMINAL, COPY AND PASTE:
+    mkdir ~/PacketTracer8.0.1
+    cp ~/Downloads/CiscoPacketTracer_801_Ubuntu_64bit.deb ~/PacketTracer8.0.1
+    cd ~/PacketTracer8.0.1
+    ar -xv CiscoPacketTracer_801_Ubuntu_64bit.deb
+    mkdir control
+    mkdir data
+    tar -C control -Jxf control.tar.xz
+    tar -C data -Jxf data.tar.xz
+    cd data
+    sudo cp -r usr /
+    sudo cp -r opt /
+
+Step 2: Run the following commands:
+
+    FROM THE TERMINAL, COPY AND PASTE:
+    sudo xdg-desktop-menu install /usr/share/applications/cisco-pt.desktop
+    sudo xdg-desktop-menu install /usr/share/applications/cisco-ptsa.desktop
+    sudo update-mime-database /usr/share/mime
+    sudo gtk-update-icon-cache --force --ignore-theme-index /usr/share/icons/gnome
+    sudo xdg-mime default cisco-ptsa.desktop x-scheme-handler/pttp
+    sudo ln -sf /opt/pt/PacketTracer /usr/local/bin/PacketTracer
+
+Step 3: Mission acomplish
+
+    Optional if PT doesn't open: Restart.
+
+
+source: https://gist.github.com/siliconjesus/c3590b8d4fdb6ebea57bb1ccd66c8434#file-fedora_33_packet_tracer_8
