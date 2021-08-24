@@ -77,6 +77,16 @@ trickle -d 120 -u 99 firefox		// -d means download & -u means upload speed.
 
 sudo rpm -i <package-name>
 
-20. Install rpm package update
+20. Install downloaded rpm package file as an update
 
 sudo rpm -U <package-name>
+
+21. Some important tweaks in dnf.conf
+
+sudo nano /etc/dnf/dnf.conf and write:
+
+	fastermirror=True		//for faster downloads
+	max_parallel_downloads=3	//3 is my choice to download multplie updates in a same time.
+	defaultyes=True			//No need to press Y. Just press Enter.
+	keepcache=True			//keep track of updates and save some time remembering it.
+
