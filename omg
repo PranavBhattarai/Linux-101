@@ -4,4 +4,12 @@
 
 pranav -mukherjee		// here minus will remove search results which include 'mukherjee'
 
-2. 
+2. Speed up Firefox using by pre-loading RAM for it
+
+sudo dnf install profile-sync-daemon	//use apt if u are on Debian based distro
+nano ~/.config/psd/psd.conf		//and search for tag called "BROWSER"
+BROWSER=(firefox)			//uncomment the tag and write firefox inside parenthesis. Save and exit.
+psd p					//command to verify whether change is in effect or not
+
+Enjoy.					//For more detail see Arch wiki.
+

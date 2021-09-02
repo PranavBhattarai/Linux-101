@@ -1,0 +1,14 @@
+1. Fixing VMware libssl and libcrypto issues by linking their locations
+
+ldd /usr/sbin/vmware-authdlauncher	//Diagnose the package issue
+cd /etc/ld.so.conf.d			//Create a ld.config file for vmware-authdlauncher
+sudo touch vmware-authdlauncher.conf
+nano vmware-authdlauncher.conf		//Write two lines written below and save and exit the file.
+/usr/lib/vmware/lib/libssl.so.1.0.2	//write same libssl.so version which u see inside /usr/bin/vmware/lib
+/usr/lib/vmware/lib/libcryto.so.1.0.2	//write same libcryto.so version which u see inside /usr/bin/vmware/lib
+sudo ldconfig				//A command to update ldconfig configurations and take action
+ldd /usr/sbin/vmware-authdlauncher	//See if the get the same error or not. 
+
+Restart the system. Now you won't see error logs about them in GNOME Logs.
+
+2.
