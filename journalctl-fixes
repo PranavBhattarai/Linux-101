@@ -1,3 +1,6 @@
+#One short trick to troubleshot get right log infromation faster. For that use this:
+journalctl -b -a -p err
+
 1. Fixing VMware libssl and libcrypto issues by linking their locations
 
 ldd /usr/sbin/vmware-authdlauncher	//Diagnose the package issue
