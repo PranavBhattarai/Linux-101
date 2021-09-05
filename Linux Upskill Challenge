@@ -7,7 +7,7 @@ sudo passwd pragya	//Change the password
 // do anything as root - but we don't want to give such super power to Pragya, do we?
 
 whoami		//see which user I am currently
-su - pragya	//will swtich to named Pragya 
+su - pragya	//will switch to named Pragya 
 exit		//will switch back to Pranav if you are in Pragya, else close the terminal.
 logut		//will switch back to Pranav
 su - pranav	//will swtich back to Pranav

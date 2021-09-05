@@ -11,4 +11,6 @@ ldd /usr/sbin/vmware-authdlauncher	//See if the get the same error or not.
 
 Restart the system. Now you won't see error logs about them in GNOME Logs.
 
-2.
+2. systemd-udevd: could not read from '/sys/module/pcc_cpufreq/initstate': No such device
+
+intel_pstate=active			//Worked for some reason.

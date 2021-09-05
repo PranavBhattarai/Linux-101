@@ -27,7 +27,7 @@ echo $XDG_SESSION_TYPE
 sudo dmseg | grep -B 4 -A 4 'psmouse'	
 
 8. Regular expressing using Grep to search patterns, example:
-lscpi -k | grep -EA 'VGA|3D|Display'				
+lspci -k | grep -EA 'VGA|3D|Display'				
 
 9. Environment variables
 printenv			//show all env variables
