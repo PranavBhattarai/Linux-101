@@ -13,3 +13,4 @@ psd p					//command to verify whether change is in effect or not
 
 Enjoy.					//For more detail see Arch wiki.
 
+1 side-effect: Slows the login screen in each boot.
