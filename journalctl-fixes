@@ -1,5 +1,9 @@
-#One short trick to troubleshot get right log infromation faster. For that use this:
+#Filter error log from normal logs
 journalctl -b -a -p err
+
+#Analyze slowdown of booting
+systemd-analyze critical-chain
+systemd-analyze blame
 
 1. Fixing VMware libssl and libcrypto issues by linking their locations
 
