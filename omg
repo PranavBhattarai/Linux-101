@@ -11,6 +11,9 @@ nano ~/.config/psd/psd.conf		//and search for tag called "BROWSER"
 BROWSER=(firefox)			//uncomment the tag and write firefox inside parenthesis. Save and exit.
 psd p					//command to verify whether change is in effect or not
 
-Enjoy.					//For more detail see Arch wiki.
+Enjoy.					//For more detail see Arch wiki. Side-effect = Slows the login screen in each boot.
 
-1 side-effect: Slows the login screen in each boot.
+3. Use Ripgrep instead of Grep for speed.
+sudo dnf install ripgrep		//use "apt" instead dnf in Debian based distro
+nano .config/fish/config.fish		//Create an alias for Riggrep so it overides Grep. Write:
+alias grep="rg"				//save and exit. Enjoy the speed. Made out of RUST.

@@ -2,8 +2,8 @@
 journalctl -b -a -p err
 
 #Analyze slowdown of booting
-systemd-analyze critical-chain
-systemd-analyze blame
+systemd-analyze critical-chain		//is the one we have to see
+systemd-analyze blame			//blame doesn't always impact boot-time. Because some of them executed asychronously.
 
 1. Fixing VMware libssl and libcrypto issues by linking their locations
 
