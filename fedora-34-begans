@@ -1,3 +1,10 @@
+#1shot to nuke them all
+sudo dnf update && sudo dnf upgrade && sudo dnf clean packages && sudo dnf system-upgrade clean && flatpak update && sudo dnf autoremove && flatpak uninstall --unused && sudo package-cleanup --leaves --all
+Thing to remember before using that command is:
+	- Its not good to use "system-upgrade" unless you know the changelog.
+	- Its not good to use "system-upgrade" unless you update all the packages with "dnf update" command.
+	- Its not good to autoremove all dependencies to avoid breaking something. Instead use, "dnf mark installed".
+
 1. Enable Gracefull shutdown
 Inside /etc/sysctl.d/pranav-sysrq.conf file write:
 kernel.sysrq=1
@@ -90,3 +97,6 @@ sudo nano /etc/dnf/dnf.conf and write:
 	defaultyes=True			//No need to press Y. Just press Enter.
 	keepcache=True			//keep track of updates and save some time remembering it.
 
+22. System information in detail
+
+fpaste --sysinfo --printonly		//greater details than 'neofetch'
