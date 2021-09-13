@@ -25,7 +25,7 @@ sudo dnf autoremove			//to remove unneccessary packages
 dnf info <package-name>
 
 5. See dependency of a package
-
+rpm -q --whatrequires <package-name>
 
 6. See display protocol AKA desktop session in use
 echo $XDG_SESSION_TYPE
@@ -100,3 +100,7 @@ sudo nano /etc/dnf/dnf.conf and write:
 22. System information in detail
 
 fpaste --sysinfo --printonly		//greater details than 'neofetch'
+
+
+23. See software version supplied by dnf
+rpm -q <package-name>
