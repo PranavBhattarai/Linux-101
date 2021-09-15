@@ -5,6 +5,12 @@ Thing to remember before using that command is:
 	- Its not good to use "system-upgrade" unless you update all the packages with "dnf update" command.
 	- Its not good to autoremove all dependencies to avoid breaking something. Instead use, "dnf mark installed".
 
+0. Proper way to update from older fedora version to new fedora version
+sudo dnf update --refresh
+sudo dnf distro-sync
+sudo dnf --disablerepo fedora-modular,updates-modular			//put this at in end of either Ist or 2nd command
+
+
 1. Enable Gracefull shutdown
 Inside /etc/sysctl.d/pranav-sysrq.conf file write:
 kernel.sysrq=1

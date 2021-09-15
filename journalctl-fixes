@@ -1,5 +1,5 @@
 #Filter error log from normal logs
-journalctl -b -a -p err
+journalctl -b -p 3			//b means last boot. p means priority. 3 means errors.
 
 #Analyze slowdown of booting
 systemd-analyze critical-chain		//is the one we have to see
