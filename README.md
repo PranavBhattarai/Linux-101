@@ -34,12 +34,11 @@ Shift + Ctrl + Super + P = Shutdown
 - [Ubuntu](https://bugs.launchpad.net/~pranav.bhattarai)
 - [GNS3](https://github.com/GNS3/gns3-gui/issues?q=author%3APranavBhattarai)
 - [Gimp](https://gitlab.gnome.org/GNOME/gimp/-/issues?scope=all&state=opened&author_username=Pranav)
-- [CherryTree](https://github.com/giuspen/cherrytree/issues/created_by/pranavbhattarai)
-etc.
+- [CherryTree](https://github.com/giuspen/cherrytree/issues/created_by/pranavbhattarai), etc.
 
-<i> One thing to note is, "contribution" is not only about "contributing code". Its also about:</i>
+<i> One thing to note is, "contribution" is not only about "contributing code". It's also about:</i>
 
 	- Reporting bugs
 	- Feature request
 
-That what I mainly do in any software if I happen to use it.
+That's what I mainly do in any software if I happen to use it.
