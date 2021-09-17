@@ -110,3 +110,6 @@ fpaste --sysinfo --printonly		//greater details than 'neofetch'
 
 23. See software version supplied by dnf
 rpm -q <package-name>
+
+24. For debugging/reporting issue, one might need to install extra package.
+sudo dnf debug-info <package-name-which-has-problem>			//note, not all packages supply this type 'debug' package

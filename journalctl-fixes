@@ -1,7 +1,8 @@
 #Filter error log from normal logs
 journalctl -b -p 3			//b means last boot. p means priority. 3 means errors.
 journalctl -b --unit=<unit-name>	//example: journalctl -b --unit=wpa_supplient
-journalctl -u <package-name>		//example: journalctl -u NetworkManager
+journalctl -b -u <package-name>		//example: journalctl -u NetworkManager
+jounralctl -b -k			// -k to include dmseg log 
 
 #Analyze slowdown of booting
 systemd-analyze critical-chain		//is the one we have to see
