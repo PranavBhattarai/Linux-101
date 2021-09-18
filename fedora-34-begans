@@ -113,3 +113,9 @@ rpm -q <package-name>
 
 24. For debugging/reporting issue, one might need to install extra package.
 sudo dnf debug-info <package-name-which-has-problem>			//note, not all packages supply this type 'debug' package
+
+25. See last updated packages
+rpm -q --last | head			// head will list last 10 output from the previous command or file.
+rpm -q --last | head -n 5		// will list the names of last 5 updated packages
+or
+rpm -q --last | head -5
