@@ -4,6 +4,10 @@ journalctl -b --unit=<unit-name>	//example: journalctl -b --unit=wpa_supplient
 journalctl -b -u <package-name>		//example: journalctl -u NetworkManager
 jounralctl -b -k			// -k to include dmseg log 
 
+journalctl --verify			//if this command output shows "fail", then only two run command listed below
+sudo journalctl --flush --rotate	//WARNING: will remove all logs
+sudo journalctl --vacuum-time=1s	//WARNING: will remove all logs
+
 #Analyze slowdown of booting
 systemd-analyze critical-chain		//is the one we have to see
 systemd-analyze blame			//blame doesn't always impact boot-time. Because some of them executed asychronously.
