@@ -2,7 +2,7 @@
 This repo is my way to clean and maintain my Linux distro. <br>
 <strike>I usually prefer non-LTS Ubuntu as my daily driver.</strike>
 <br><br>
-After 2 years on Ubuntu, in 2021, I distro hopped to Fedora (34).
+After almost 3 years on Ubuntu, in 2021, I distro hopped to Fedora (34).
 
 These are some commands that I used to makes things work.
 This is <b><i>just</i></b> a backup if incase it gets lost.
