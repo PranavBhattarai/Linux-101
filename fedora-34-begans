@@ -64,12 +64,11 @@ seq 100 | xargs -I {} touch {}.txt	//Can also use any other symbol instead of cu
 
 15. Install a package without installing its weak dependencies
 
-	 sudo dnf install <package-name> --ignore-weak-dependencies
-example: sudo dnf install kdenlive --ignore-weak-dependencies
+sudo dnf install <package-name> --setopt=install_weak_deps=False
 
 16. Find and rename words or letter with another
 
-	echo 'abc xyz' | tr 'abc' 'ABC'			//Using a single inverted comma here is optional.
+echo 'abc xyz' | tr 'abc' 'ABC'			//Using a single inverted comma here is optional.
 
 output:-> ABC xyz
 

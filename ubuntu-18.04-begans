@@ -1,4 +1,6 @@
-. aprospos <what command u want to know>
+#Ubuntu 18.04 is the first linux distribution I installed
+
+1. aprospos <what command u want to know>
 
 2. dmesg | grep -i firmware					// will tell something related to firmware.
 
