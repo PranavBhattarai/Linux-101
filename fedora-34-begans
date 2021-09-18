@@ -119,3 +119,10 @@ rpm -q --last | head			// head will list last 10 output from the previous comman
 rpm -q --last | head -n 5		// will list the names of last 5 updated packages
 or
 rpm -q --last | head -5
+
+
+26. Files all packages installed by user manually
+
+	dnf repoquery --userinstalled
+or
+	dnf history userinstalled
