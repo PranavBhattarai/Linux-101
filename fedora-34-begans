@@ -125,3 +125,9 @@ rpm -q --last | head -5
 	dnf repoquery --userinstalled
 or
 	dnf history userinstalled
+
+27. See all history of when you install packages
+
+dnf history				//cool shit
+
+28.

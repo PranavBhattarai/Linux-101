@@ -1,5 +1,5 @@
 sudo adduser pragya	//to add a new user
-sudo passwd pragya	//Change the password
+sudo passwd pragya	//need to have the password inorder to use, I guess
 
 // Note: new user can't run 'sudo' commands with elevated privileges by default.
 // Any such attempts are reported in log for administrative user to see.
@@ -14,8 +14,13 @@ su - pranav	//will swtich back to Pranav
 su -		//will switch to Root user
 
 usermod -aG sudo pragya		//Pragya will also have all admin right. Not Recommanded
+usermod -aG wheel pragya	//In fedora, "wheel" is the default group where admins are listed.
 sudo deluser pragya sudo	//Pragya will no longer have admin right.
 
+2. How can two user copy their files?
+sudo cp /home/pragya/Pictures/cat.png  /home/pranav/Pictures	//For this pragya need have sudo group.
+
+#
 less			//read output serially
 
 
