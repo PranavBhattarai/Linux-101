@@ -1,10 +1,10 @@
-/- This file includes interesting unique find out which might be very helpfull depending upon different situation -\
+/- A search on speed up the process. ANY process-\
 
 1. How to google "pranav" in such a we don't get famous 'pranav mukherjee'
 
 pranav -mukherjee		// here minus will remove search results which include 'mukherjee'
 
-2. Speed up Firefox using by pre-loading RAM for it
+2. Speed up Firefox by pre-loading RAM for it
 
 sudo dnf install profile-sync-daemon	//use apt if u are on Debian based distro
 nano ~/.config/psd/psd.conf		//and search for tag called "BROWSER"
@@ -13,7 +13,18 @@ psd p					//command to verify whether change is in effect or not
 
 Enjoy.					//For more detail see Arch wiki. Side-effect = Slows the login screen in each boot.
 
-3. Use Ripgrep instead of Grep for speed.
-sudo dnf install ripgrep		//use "apt" instead dnf in Debian based distro
-nano .config/fish/config.fish		//Create an alias for Riggrep so it overides Grep. Write:
-alias grep="rg"				//save and exit. Enjoy the speed. Made out of RUST.
+
+3. Replace legacy tools with new tool made out of Rust
+
+sudo dnf install <package name>		//Package names are listed below.
+nano .config/fish/config.fish		//Create an alias to override legacy tools
+
+	alias grep="ripgrep"		//But first: sudo dnf install ripgrep
+	alias cat="bat"			//But first: sudo dnf install bat
+	alias ls="exa"			//But first: sudo dnf install exa
+Enjoy
+
+4. (Optional) Using nuShell
+
+sudo dnf install nushell
+config set skip_welcome_message $true	//To remove welcome message
