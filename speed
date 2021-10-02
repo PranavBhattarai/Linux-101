@@ -28,3 +28,6 @@ Enjoy
 
 sudo dnf install nushell
 config set skip_welcome_message $true	//To remove welcome message
+
+5. Make any shell suggestion fast.
+sudo dnf install starship

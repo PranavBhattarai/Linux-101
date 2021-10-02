@@ -18,3 +18,11 @@ window:
 5. For changing fish themes, from terminal:
 fish_config colors				//and select theme
 I prefer Lava theme.
+
+6.Installed nuShell
+sudo dnf install nushell				//installed from third party
+
+7. Managing two shells to open with Alacritty
+
+alacritty -e fish					//Launch alacritty with fish shell
+alacritty -e nu						//Launch alacritty with nushell
