@@ -1,28 +1,42 @@
 1. Create alacritty.yml file inside ~/.config/alacritty
 
 2. Install npm for Alacritty themes & run
-npx alacritty-themes --create		//optional
-npx alacritty-themes			//select themes
+npx alacritty-themes --create				//optional
+npx alacritty-themes					//select themes
 I prefer Dracula theme.			
 Now you can uninstall npm if you want.
 
-3. Alacritty background opacity, write:
+3. Alacritty configurations
+# Alacritty background opacity, write:
 background_opacity: 0.90
 
-4. Alacritty Window size:
+#Alacritty Window size:
 window:
   dimensions:
     columns: 70
     lines: 25
 
-5. For changing fish themes, from terminal:
-fish_config colors				//and select theme
-I prefer Lava theme.
+4. For changing fish themes, from terminal:
+fish_config colors					//and select theme.I prefer Lava theme.
 
-6.Installed nuShell
+5.Installed nuShell
 sudo dnf install nushell				//installed from third party
 
-7. Managing two shells to open with Alacritty
+5. Managing two shells to open with Alacritty
 
 alacritty -e fish					//Launch alacritty with fish shell
 alacritty -e nu						//Launch alacritty with nushell
+
+6. Starship configs
+
+add_newline = false
+
+format = """
+[$directory](bold cyan)($git_branch$git_state$git_status)
+$hostname $username [-»](bold green) """
+
+[line_break]
+disabled = true
+
+[character]
+success_symbol = "[~>](bold green)"
