@@ -130,4 +130,9 @@ or
 
 dnf history				//cool shit
 
-28.
+28. Copy all files from a folder and paste it.
+
+cp *.* /path/to/folder				//First * will select all files and Second * will all types of file-extensions
+						//Therefore any files with any extensions will be copied.
+
+29.
