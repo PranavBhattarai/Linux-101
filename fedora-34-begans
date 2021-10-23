@@ -134,6 +134,6 @@ dnf history				//cool shit
 
 cp *.* /path/to/folder				//First * will select all files and Second * will all types of file-extensions
 						//Therefore any files with any extensions will be copied.
-29. Example to count all words
+29. Example to count all lines
 
-dnf list --installed | wc -l			// Will list out all total number of packages installed by counting all words
+dnf list --installed | wc -l			// Will list out all total number of packages installed by counting all lines

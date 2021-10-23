@@ -16,7 +16,7 @@ Enjoy.					//For more detail see Arch wiki. Side-effect = Slows the login screen
 
 3. Replace legacy tools with new tool made out of Rust
 
-sudo dnf install <package name>		//Package names are listed below.
+sudo dnf install <package name>		//Package names are quoted below.
 nano .config/fish/config.fish		//Create an alias to override legacy tools
 
 	alias grep="ripgrep"		//But first: sudo dnf install ripgrep
@@ -24,10 +24,20 @@ nano .config/fish/config.fish		//Create an alias to override legacy tools
 	alias ls="exa"			//But first: sudo dnf install exa
 Enjoy
 
-4. (Optional) Using nuShell
+4. (Optional) Install nuShell		//A shell made out of Rust
 
 sudo dnf install nushell
 config set skip_welcome_message $true	//To remove welcome message
 
-5. Make any shell suggestion fast.
+5. Make any shell suggestion fast using Universal Shell Prompt configuration.
+
 sudo dnf install starship
+
+6. Search from terminal			//Needs internet
+
+curl cheat.sh/<string>			//For example: cheat.sh/git
+curl cht.sh/<string>								~ "cht" is just an alias for "cheat".
+curl cht.sh/<language>/<part>		//Example: cht.sh/rust/functions
+curl cht.sh/<language>/:list		//Example: cht.sh/rust/:list		~ show all cheatsheat list available to use
+curl cht.sh/<language>/:learn		//Learn ANY programming langauge.	~ Example: cht.sh/rust/:learn
+
