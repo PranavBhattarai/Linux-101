@@ -1,0 +1,40 @@
+1. Setting up vagrant
+
+sudo dnf install vagrant
+mkdir vagrant
+cd vagrant
+vagrant up					//Can throw an error. So do the following
+
+vagrant box add ubuntu/focal64			//You can choose another distribution similarly
+vagrant up
+
+2. Setting up Ngnix in Redhat based distros
+
+sudo dnf install ngnix
+sudo mkdir /etc/nginx/sites-available		//In debain based distro, we have this folder by default
+sudo mkdri /etc/nginx/sites-enabled		//"	"	"	"	"	"	"
+sudo nano /etc/nginx/nginx.conf			//Edit the http block and the line below:
+
+include /etc/nginx/sites-enabled/*;		
+
+[Note: all files will be inside "sites-available" and we've to create symlink inside sites enabled]
+
+3. Setup Docker
+
+sudo dnf install moby-engine			//weird
+sudo docker login				//optional
+sudo docker pull <distro>:<version>		//Will install distro.	ex: sudo docker pull ubuntu:20.04
+sudo docker run -it <distro>			//Will run the distro.	ex: sudo docker run -it ubuntu
+exit						//Will close container.
+sudo docker attach <container_id>		//Will link two or more terminal running same docker
+
+[Note: docker image uses the same kernel which host OS has. Distros which run inside docker container doesn't have its own kernel.]
+
+4. Keep a log of command you type
+
+script						//will start recording commands
+exit						//will stop recording commands
+
+[Start-Transcript and Stop-Transcript is command-line tools that can be used in Windows.]
+
+5.
