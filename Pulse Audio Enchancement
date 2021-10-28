@@ -1,3 +1,5 @@
+[update: Pipewire is the far more better than PulseAudio. So don't bother with the configuration written below. Move to Pipewire.]
+
 Step 1:
 
 nano ~/.config/pulse/daemon.conf
