@@ -37,4 +37,6 @@ exit						//will stop recording commands
 
 [Start-Transcript and Stop-Transcript is command-line tools that can be used in Windows.]
 
-5.
+5. Make a SSH connection to a computer if you have credentials
+
+ssh username@remote_host -p 2222		//example: ssh ubuntu@13.126.30.126 -p 22
