@@ -137,3 +137,10 @@ cp *.* /path/to/folder				//First * will select all files and Second * will all 
 29. Example to count all lines
 
 dnf list --installed | wc -l			// Will list out all total number of packages installed by counting all lines
+
+30. Remove unnecessary bloatware.		//Fedora 35 official released on Nov 2, 2021. I upgraded it on Nov 3.
+
+sudo dnf remove ibus-hangul			//Foreign language
+sudo dnf remove ibus-pinyin			//Foreign language
+sudo dnf remove ibus-libzhuyin			//Foreign languae
+sudo dnf remove gnome-tour			//Uncessary tour
