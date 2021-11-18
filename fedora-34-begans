@@ -144,3 +144,23 @@ sudo dnf remove ibus-hangul			//Foreign language
 sudo dnf remove ibus-pinyin			//Foreign language
 sudo dnf remove ibus-libzhuyin			//Foreign languae
 sudo dnf remove gnome-tour			//Uncessary tour
+
+31. Enable 3rd party repo
+
+sudo dnf config-manager --set-enabled <repo-name>
+
+ex:	sudo dnf config-manager --set-enabled copr:copr.fedorainfracloud.org:atim:nushell	//to install nushell
+
+32. Speed up dnf download process
+
+sudo nano /etc/dnf/dnf.conf
+
+	fastestmirror=True
+	max_parallel_downloads=10
+
+33. List all repositories from where updates are coming
+
+dnf repolist
+dnf repolist all
+dnf repolist all | grep -i disabled
+dnf repolist all | grep -i enabled
