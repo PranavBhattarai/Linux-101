@@ -170,6 +170,8 @@ dnf repolist all | grep -i enabled
 
 sudo dnf install community-mysql-common		//"common" will install all necessary packages
 sudo systemctl start mysqld
+mysql_secure_installation			//To setup the password, previleges, etc
+mysql -u <username> -p				//Try to avoid using "sudo" with mysql
 
 36. List all user installed python packages
 
