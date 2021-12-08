@@ -6,7 +6,7 @@ cd vagrant
 vagrant up					//Can throw an error. So do the following
 
 vagrant box add ubuntu/focal64			//You can choose another distribution similarly
-vagrant up
+vagrant up					//Vagarnt sucks for some reason.
 
 2. Setting up Ngnix in Redhat based distros
 
@@ -37,6 +37,20 @@ exit						//will stop recording commands
 
 [Start-Transcript and Stop-Transcript is command-line tools that can be used in Windows.]
 
-5. Make a SSH connection to a computer if you have credentials
+5. Make a SSH connection to a computer if you have login credentials
 
-ssh username@remote_host -p 2222		//example: ssh ubuntu@13.126.30.126 -p 22
+ssh <username>@<ip> -p <>		//example: ssh ubuntu@13.126.30.126 -p 22
+
+[For more: curl cht.sh/ssh]
+
+6. Setup MySQL
+
+sudo dnf install community-mysql-common				//"common" will install all necessary packages
+sudo systemctl start mysqld					//Optional
+mysql_secure_installation					//Setup root password, previleges, etc.
+create user 'pranav'@'localhost' identified by 'bhattarai'	//will create mysql user named "pranav" with password named "bhattarai"
+mysql -u <username> -p						//Try to avoid using "sudo" in any mysql command
+	
+[MariaDB is a great fork of MySQL which provides all premium feature which MySQL doesn't. Avoid Mysql. Learn MariaDB instead.]
+
+7. 

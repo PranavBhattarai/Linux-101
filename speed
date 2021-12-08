@@ -33,11 +33,12 @@ config set skip_welcome_message $true	//To remove welcome message
 
 sudo dnf install starship
 
-6. Search from terminal			//Needs internet
+6. Search & learn from terminal			//Needs internet
 
 curl cheat.sh/<string>			//For example: cheat.sh/git
 curl cht.sh/<string>								~ "cht" is just an alias for "cheat".
 curl cht.sh/<language>/<part>		//Example: cht.sh/rust/functions
 curl cht.sh/<language>/:list		//Example: cht.sh/rust/:list		~ show all cheatsheat list available to use
 curl cht.sh/<language>/:learn		//Learn ANY programming langauge.	~ Example: cht.sh/rust/:learn
+curl cht.sh/<langauge>/:<term>		//Example: cht.sh/rust/:self		~ will tell everything about "self" in Rust. Cool.
 
