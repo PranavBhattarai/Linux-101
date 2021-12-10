@@ -3,8 +3,6 @@
 sudo dnf install vagrant
 mkdir vagrant
 cd vagrant
-vagrant up					//Can throw an error. So do the following
-
 vagrant box add ubuntu/focal64			//You can choose another distribution similarly
 vagrant up					//Vagarnt sucks for some reason.
 
@@ -51,6 +49,6 @@ mysql_secure_installation					//Setup root password, previleges, etc.
 create user 'pranav'@'localhost' identified by 'bhattarai'	//will create mysql user named "pranav" with password named "bhattarai"
 mysql -u <username> -p						//Try to avoid using "sudo" in any mysql command
 	
-[MariaDB is a great fork of MySQL which provides all premium feature which MySQL doesn't. Avoid Mysql. Learn MariaDB instead.]
+[MariaDB is a great fork of MySQL which provides all advance features. So learn MariaDB instead, or even better learn PostgreSQL.]
 
 7. 
