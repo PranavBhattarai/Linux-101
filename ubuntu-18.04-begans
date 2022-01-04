@@ -111,6 +111,19 @@ sudo apt-get install -f
 sudo apt install lilo
 sudo lilo -M /dev/sda mbr
 
+If that doesn't work, then from Windows terminal:
+diskpart
+select drive <>		//usually drive 0
+list vol
+select vol <>		//usually vol which says Fat filesystem
+assign = p		//rename that volume
+exit			//leave diskpart
+p:			//To enter inside that volume which we renamed earlier
+dir			//To see contents
+delete <distro>		//Delete ubuntu or any other distro
+cd Boot
+delte <>		//delete a file which is of linux
+
 25. less file.txt					//read file in terminal by scrolling lines
 
 26. Shutdown
