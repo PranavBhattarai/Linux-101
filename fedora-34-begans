@@ -168,3 +168,8 @@ dnf repolist all | grep -i enabled
 34. List all user installed python packages
 
 pip list --user
+
+
+36. Clean grub menu by remove unnecessary boot images like Ubuntu, Windows, etc, if you don't use
+
+sudo efibootmgr -b <boot-order-number> --delete-bootnum		[WARNING: be carefull while typing boot order number]
