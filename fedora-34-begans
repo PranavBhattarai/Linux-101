@@ -172,4 +172,14 @@ pip list --user
 
 36. Clean grub menu by remove unnecessary boot images like Ubuntu, Windows, etc, if you don't use
 
-sudo efibootmgr -b <boot-order-number> --delete-bootnum		[WARNING: be carefull while typing boot order number]
+sudo efibootmgr -b <boot-order-number> --delete-bootnum		[WARNING: be carefull while typing boot order number] // delete it
+sudo efibootmgr -A -b <boot-order-number>			// will deactivate from booting. For testing purpose.
+sudo efibootmgr -a -b <boot-order-number>			// will activate for booting.
+
+
+38. Remove a package coming as an update
+
+sudo nano /etc/dnf/dnf.conf	
+and write:
+		exclude=<package name> <package name>		// Do this to package you hate or don't want to install
+example:	exclude=gnome-tour				// I really hate this "gnome-tour" package. Useless for me.
