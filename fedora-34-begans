@@ -2,8 +2,9 @@
 sudo dnf update && sudo dnf upgrade && sudo dnf clean packages && sudo dnf system-upgrade clean && flatpak update && sudo dnf autoremove && flatpak uninstall --unused && sudo package-cleanup --leaves --all
 Thing to remember before using that command is:
 	- Its not good to use "system-upgrade" unless you know the changelog.
-	- Its not good to use "system-upgrade" unless you update all the packages with "dnf update" command.
+	- Its not good to use "system-upgrade" before you run "dnf update && dnf upgrade" command.
 	- Its not good to autoremove all dependencies to avoid breaking something. Instead use, "dnf mark installed".
+	But I used it anyway, so LOL.
 
 0. Proper way to update from older fedora version to new fedora version
 sudo dnf update --refresh
@@ -120,7 +121,7 @@ or
 rpm -q --last | head -5
 
 
-26. Files all packages installed by user manually
+26. List all packages installed by user manually
 
 	dnf repoquery --userinstalled
 or
@@ -188,4 +189,18 @@ example:	exclude=gnome-tour				// I really hate this "gnome-tour" package. Usele
 
 39. See hardware capability
 
-/lib64/ld-linux-x86-64.so.2 --help				//
+/lib64/ld-linux-x86-64.so.2 --help				// Notice the version of architecture it supports
+
+
+40. Clone a git repo without having to fork it.
+
+git clone <url>
+
+
+41. Clone a repo but only keep track of files you actually need.
+
+touch .gitignore				//Write file and foldernames in each line to ignore.
+						//Use forward slash (i.e \) for space in folder or file name.
+						//Use backward slash (i.e /) when your reach the end of file or folder name.
+
+[Now you can delete those files and folder without having to reappear when you type, "git pull".]
