@@ -13,7 +13,7 @@ This is <b><i>just</i></b> a backup if incase it gets lost.
 - [Reddit](https://www.reddit.com/user/Arunzeb)
 - [FedoraProject](https://ask.fedoraproject.org/u/bond)
 
-### Opensource projects where I have contribued:
+### Some Opensource projects where I involve:
 
 - [Just Perfection](https://gitlab.gnome.org/jrahmatzadeh/just-perfection/-/issues?scope=all&state=all&author_username=Pranav)
 - [Firefox](https://bugzilla.mozilla.org/buglist.cgi?query_format=advanced&emailtype1=exact&emailreporter1=1&email1=Prabesh432%40gmail.com&list_id=15840362)
@@ -22,9 +22,3 @@ This is <b><i>just</i></b> a backup if incase it gets lost.
 - [Gimp](https://gitlab.gnome.org/GNOME/gimp/-/issues?scope=all&state=opened&author_username=Pranav)
 - [CherryTree](https://github.com/giuspen/cherrytree/issues/created_by/pranavbhattarai), etc.
 
-<i> One thing to note is, "contribution" is not only about "contributing code". It's also about:</i>
-
-	- Reporting bugs
-	- Feature request
-
-That's what I mainly do in any software if I happen to use it.
