@@ -183,3 +183,9 @@ sudo nano /etc/dnf/dnf.conf
 and write:
 		exclude=<package name> <package name>		// Do this to package you hate or don't want to install
 example:	exclude=gnome-tour				// I really hate this "gnome-tour" package. Useless for me.
+
+
+
+39. See hardware capability
+
+/lib64/ld-linux-x86-64.so.2 --help				//
