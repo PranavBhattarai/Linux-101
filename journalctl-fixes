@@ -3,6 +3,7 @@ journalctl -b -p 3			//b means last boot. p means priority. 3 means errors.
 journalctl -b --unit=<unit-name>	//example: journalctl -b --unit=wpa_supplient
 journalctl -b -u <package-name>		//example: journalctl -u NetworkManager
 jounralctl -b -k			// -k to include dmseg log 
+journalctl -fo cat /usr/bin/gnome-shell	//grab all gnome-shell warnings/bugs/errors
 dmesg > /path/to/location		//For reporting. Sames goes to Journalctl commands.
 
 journalctl --verify			//if this command output shows "fail", then only two run command listed below
