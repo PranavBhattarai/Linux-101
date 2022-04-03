@@ -30,3 +30,11 @@ Restart the system. Now you won't see error logs about them in GNOME Logs.
 2. systemd-udevd: could not read from '/sys/module/pcc_cpufreq/initstate': No such device
 
 intel_pstate=active			//Worked for some reason.
+
+
+3. Contribute by sending hardware details	[Warning: Privacy will be compromised]
+
+sudo hw-probe -all
+cd /root/HW_PROBE/LATEST/hw.info		//See what you are going to upload
+hw-probe -upload
+sudo -E hw-probe -all -upload			// Even better
