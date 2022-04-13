@@ -1,10 +1,13 @@
 #1shot to nuke them all
-sudo dnf update && sudo dnf upgrade && sudo dnf clean packages && sudo dnf system-upgrade clean && flatpak update && sudo dnf autoremove && flatpak uninstall --unused && sudo package-cleanup --leaves --all
+sudo dnf upgrade && sudo dnf autoremove && flatpak update && flatpak uninstall --unused
 Thing to remember before using that command is:
 	- Its not good to use "system-upgrade" unless you know the changelog.
 	- Its not good to use "system-upgrade" before you run "dnf update && dnf upgrade" command.
 	- Its not good to autoremove all dependencies to avoid breaking something. Instead use, "dnf mark installed".
-	But I used it anyway, so LOL.
+
+##Safest way to update without breaking/crashing anything
+sudo dnf offline-upgrade download --best --refesh
+sudo dnf offline-upgrade reboot
 
 0. Proper way to update from older fedora version to new fedora version
 sudo dnf update --refresh
