@@ -1,0 +1,81 @@
+1. Print 'hello world'
+
+#!/bin/bash
+echo "hello world"
+
+
+`````````````````````
+2. Use time delay to print
+
+#!/bin/bash
+
+echo "Hi, Pranav, how are you?"
+sleep 1
+echo "I'm good. What about you?"
+sleep 1
+
+
+`````````````````````````````````````````````````
+3. Use variable to print something
+[Don't write blank space while defining a varabile]
+
+#!/bin/bash
+
+name="Pranav"
+echo "Hello $name"
+ 
+
+``````````````````````````````````````````````````
+4. Take user input
+
+#!/bin/bash
+
+echo "What is your name?"
+read name
+echo "Hi, $name"
+
+
+````````````````````````````````````````````````````
+5. Define prameter(s) and show how to run the script.
+
+#!/bin/bash
+
+name=$1
+palce=$2
+
+echo "What is your name?"
+sleep 1
+echo "My name is $name."
+
+sleep 2
+
+echo "Where you from?"
+sleep 1
+echo "I'm from $place"
+
+sleep 2
+echo "So $name, you came all the way from $place looking for job. Am I right?"
+sleep 1
+echo "yes"
+
+[Run this file using: ./scriptname.sh pranav parasi]
+[This is called positional argument/parameter. We are using position of parameter to call it.]
+[Note: Script can run regardless of argument. In such case, it will print empty space.]
+
+
+```````````````````````````````````````````````````````````````````````
+6. How to run Linux command inside bash script? (tips: using variables)
+
+echo "What time and date today is?"
+time=$(date)
+sleep 1
+echo "Today is $time"
+
+sleep 2
+
+echo "Which shell do you mostly use in linux?"
+shell=$(which $SHELL)
+sleep 1
+echo "I use $shell in linux."
+
+[here, linux commands written are inside parenthesis]

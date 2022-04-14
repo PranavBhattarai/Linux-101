@@ -1,19 +1,32 @@
+
 #1shot to nuke them all
 sudo dnf upgrade && sudo dnf autoremove && flatpak update && flatpak uninstall --unused
 Thing to remember before using that command is:
 	- Its not good to use "system-upgrade" unless you know the changelog.
-	- Its not good to use "system-upgrade" before you run "dnf update && dnf upgrade" command.
 	- Its not good to autoremove all dependencies to avoid breaking something. Instead use, "dnf mark installed".
 
 ##Safest way to update without breaking/crashing anything
-sudo dnf offline-upgrade download --best --refesh
+sudo dnf offline-upgrade download --best --refresh
 sudo dnf offline-upgrade reboot
 
 0. Proper way to update from older fedora version to new fedora version
 sudo dnf update --refresh
 sudo dnf distro-sync
-sudo dnf --disablerepo fedora-modular,updates-modular			//put this at in end of either Ist or 2nd command
+sudo dnf system-upgrade download --releasever=pranav			//remove "pranav" & write new fedora version, u want to install
+sudo dnf system-upgrade reboot
+sudo dnf install rpmconf
+sudo dnf rpmconf -a
+sudo dnf install remove-retired-packages
+remove-retired-packages
+sudo dnf repoquery --unsatisfied					//list of packages with broken dependencies
+sudo dnf autoremove
+sudo dnf remove $(dnf repoquery --extras)				//observe it and carefully remove packages which u don't need
 
+sudo dnf install symlinks						//Clean-up old symlinks
+sudo symlinks -r /usr | grep dangling
+sudo symlinks -r -d /usr
+
+sudo rpm --rebuilddb							//Rebuilding the RPM database
 
 1. Enable Gracefull shutdown
 Inside /etc/sysctl.d/pranav-sysrq.conf file write:
