@@ -8,6 +8,7 @@ Thing to remember before using that command is:
 ##Safest way to update without breaking/crashing anything
 sudo dnf offline-upgrade download --best --refresh
 sudo dnf offline-upgrade reboot
+sudo dnf offline-upgrade clean
 
 0. Proper way to update from older fedora version to new fedora version
 sudo dnf update --refresh
