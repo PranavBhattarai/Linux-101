@@ -48,3 +48,8 @@ journalctl -xe | fpaste				// send the link you get in community
 [If that log is not enough, you need to share entire log]
 
 journalctl -x -b 0 > pranav.txt			// share/upload the file in community
+
+
+5. PAM module looking for "fingerprint" authentication even when there is so hardware capability.
+
+sudo authselect disable-feature with-fingerprint	// this command will stop unneccessary logs from appearing about fingerprint
