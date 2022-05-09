@@ -45,3 +45,9 @@ curl cht.sh/<langauge>/:<term>		//Example: cht.sh/rust/:self		~ will tell everyt
 7. Directly commit and add files to repo
 
 git commit -am "hey there"	// -a will Add all the files in current working directory
+
+
+8. Search commands quickly
+
+ctrl + r		//Type something and press 'ctrl + r'. You will see past command based on what you wrote.
+man -k <something>	//Suppose you forget command but you know a part of its existance. Then use thing command.
