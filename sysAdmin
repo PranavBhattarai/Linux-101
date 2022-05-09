@@ -51,4 +51,12 @@ mysql -u <username> -p						//Try to avoid using "sudo" in any mysql command
 	
 [MariaDB is a great fork of MySQL which provides all advance features. So learn MariaDB instead, or even better learn PostgreSQL.]
 
-7. 
+7. Head, Tail & Tailf command to see logs
+
+head -4 /path/to/log		// to see 4 log entries from the beginning
+tail -5 /path/to/log		// to see 5 log entries form the ending
+tailf /path/to/log		// to see realtime change in log
+
+[For more: curl cht.sh/<command>]
+
+8. 
