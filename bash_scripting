@@ -64,6 +64,7 @@ echo "yes"
 
 
 ```````````````````````````````````````````````````````````````````````
+
 6. How to run Linux command inside bash script? (tips: using variables)
 
 echo "What time and date today is?"
@@ -79,3 +80,45 @@ sleep 1
 echo "I use $shell in linux."
 
 [here, linux commands written are inside parenthesis]
+
+```````````````````````````````````````````````````````````````
+
+7. How to make change user-defined variable to system variable?
+
+echo Windows="Bill Gates"	//create user defined variable
+$Windows			//will print, "Bill Gates"
+export Windows			//will convert user-defined variable to system variable
+
+[There are two types of environment variables: i. System Environment Variable	ii. User Environment Variable]
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+8. How to make user-defined system variable permanent (which doesn't disapper after reboot/shutdown)?
+
+nano .bashrc
+export Windows="Bill Gates"
+
+[Save the bashrc file. Now the system variable will be available ready to use anytime.]
+
+```````````````````````````````````````````````````````````````````````````````````````
+
+9. How to do simple math calculation?
+
+echo $((2+2))		//ans: 4
+echo $((4/2))		//ans: 2
+echo $((3*3))		//ans: 9
+echo $((7%3))		//ans: 1	//prints out remainder after division of 7 by 3
+
+[Double parenthesis in mandatory after dollar sign. Bash by default, doesn't print floating no.]
+
+
+10. How to print random number?
+
+echo $RANDOM
+
+11. How to print random number in specific range?
+
+echo $(($RANDOM%4)	//print randomly from 0 to 3. Excluding 4.
+
+
+  
