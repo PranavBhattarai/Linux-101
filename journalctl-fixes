@@ -1,9 +1,10 @@
 #Filter error log from normal logs
 journalctl -b -p 3			//b means last boot. p means priority. 3 means errors.
 journalctl -b --unit=<unit-name>	//example: journalctl -b --unit=wpa_supplient
-journalctl -b -u <package-name>		//example: journalctl -u NetworkManager
-jounralctl -b -k			// -k to include dmseg log
-jounralctl -ef				//to see log entries in realtime
+journalctl -b -u <package-name>		//example: journalctl -u NetworkManager. Here "-u" represent unit name of a program
+journalctl -b -k			// -k to include dmseg log
+journalctl -ef				//to see log entries in realtime
+journalctl -p err			//priotize error logs
 journalctl -fo cat /usr/bin/gnome-shell	//grab all gnome-shell warnings/bugs/errors
 dmesg > /path/to/location		//For reporting. Sames goes to Journalctl commands.
 

@@ -111,14 +111,13 @@ echo $((7%3))		//ans: 1	//prints out remainder after division of 7 by 3
 
 [Double parenthesis in mandatory after dollar sign. Bash by default, doesn't print floating no.]
 
+````````````````````````````````````````````````````````````````````````````````````````````````
 
 10. How to print random number?
 
 echo $RANDOM
+echo $(($RANDOM%4))	//print randomly from 0 to 3; excluding 4.
 
-11. How to print random number in specific range?
+```````````````````````````````````````````````````````````````````  
 
-echo $(($RANDOM%4)	//print randomly from 0 to 3. Excluding 4.
-
-
-  
+11.

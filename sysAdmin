@@ -59,4 +59,23 @@ tailf /path/to/log		// to see realtime change in log
 
 [For more: curl cht.sh/<command>]
 
-8. 
+`````````````````````````````````
+
+8. Indentifying network loss/drop
+
+mtr google.com			//mtr is an opensource utility tool which merges the functionality of 'traceroute' & 'ping'.
+
+[]
+
+``````````````````````````````````
+
+10. Watch the command
+
+watch ls			//See realtime change in new files/folder being created since "watch" will refresh at every 2 sec.
+
+[Watch will work with almost any other command. Just type 'watch' before the command.]
+
+```````````````````````````````````````````````````````````````````````````````````````
+
+11. 
+
