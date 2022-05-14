@@ -17,22 +17,33 @@ usermod -aG sudo pragya		//Pragya will also have all admin right. Not Recommande
 usermod -aG wheel pragya	//In fedora, "wheel" is the default group where admins are listed.
 sudo deluser pragya sudo	//Pragya will no longer have admin right.
 
+``````````````````````````````````````````````````````````````````````````
 2. How can two user copy their files?
-sudo cp /home/pragya/Pictures/cat.png  /home/pranav/Pictures	//For this pragya need have sudo group.
+sudo cp /home/pragya/Pictures/cat.png  /home/pranav/Pictures	//For this pragya needs be in list of sudoers group.
 
-#
+``````````````````````````````````````````````````````````````````````
+3.
 less			//read output serially
-
-
+```````````````````````````````````````````````
+4.
 df			//disk free commmand to know about disk state
 
+``````````````````````````````````````````````````````````````````````
+5. Couting
 wc			//word count
 wc -l			//count all lines
-
-
+``````````````````````````````````````````````````````````
+6.
 ss -4				//socket status using ipv4
 ss -6				//socket status using ipv6
 
+````````````````````````````````````````````````````````````
+7. Find file in particular directory
+
 find /home/pranav -name Penuma.mp3
 
+`````````````````````````````````````````````````````
 
+8. Make a script executable
+
+chmod +x /path/to/script.sh
