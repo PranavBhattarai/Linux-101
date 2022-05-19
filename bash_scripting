@@ -1,3 +1,7 @@
+0. Write comment inside bash script
+
+#This is comment written by Mr. Pranav.
+
 1. Print 'hello world'
 
 #!/bin/bash
@@ -17,13 +21,13 @@ sleep 1
 
 `````````````````````````````````````````````````
 3. Use variable to print something
-[Don't write blank space while defining a varabile]
 
 #!/bin/bash
 
 name="Pranav"
 echo "Hello $name"
  
+[Don't leave blank space while defining a varabile. It will throw an error.]
 
 ``````````````````````````````````````````````````
 4. Take user input
@@ -83,7 +87,7 @@ echo "I use $shell in linux."
 
 ```````````````````````````````````````````````````````````````
 
-7. How to make change user-defined variable to system variable?
+7. How to change user-defined variable to system variable?
 
 echo Windows="Bill Gates"	//create user defined variable
 $Windows			//will print, "Bill Gates"
@@ -93,7 +97,7 @@ export Windows			//will convert user-defined variable to system variable
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
-8. How to make user-defined system variable permanent (which doesn't disapper after reboot/shutdown)?
+8. How to make user-defined system variable permanent so that it doesn't disapper after reboot/shutdown)?
 
 nano .bashrc
 export Windows="Bill Gates"
@@ -115,9 +119,27 @@ echo $((7%3))		//ans: 1	//prints out remainder after division of 7 by 3
 
 10. How to print random number?
 
-echo $RANDOM
+echo $RANDOM		//print random number
 echo $(($RANDOM%4))	//print randomly from 0 to 3; excluding 4.
 
 ```````````````````````````````````````````````````````````````````  
 
-11.
+11. How to write if-else loop?
+
+
+#!/bin/bash
+
+echo "Hey, do you like this repository? (yes/no)"
+read reply
+if [[ $reply == "yes" ]]; then
+	echo "hire me"
+else
+	echo "What else can I do to improve my skill?"
+fi
+
+[The word "fi" is used to close the program. All the white spaces which you see in if statement is mandatory.]
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+12. 
