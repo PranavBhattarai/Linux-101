@@ -27,7 +27,7 @@ sleep 1
 name="Pranav"
 echo "Hello $name"
  
-[Don't leave blank space while defining a varabile. It will throw an error.]
+[Don't leave blank space while defining a varabile. It will throw an error or warnings.]
 
 ``````````````````````````````````````````````````
 4. Take user input
@@ -89,8 +89,8 @@ echo "I use $shell in linux."
 
 7. How to change user-defined variable to system variable?
 
-echo Windows="Bill Gates"	//create user defined variable
-$Windows			//will print, "Bill Gates"
+Windows="Bill Gates"		//create user defined variable
+$Windows			//will print variable value
 export Windows			//will convert user-defined variable to system variable
 
 [There are two types of environment variables: i. System Environment Variable	ii. User Environment Variable]
@@ -141,5 +141,46 @@ fi
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
+12. Why we need exit numbers?!
 
-12. 
+
+
+
+
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+13. Tricks of semicolon. Multiple command inside 1 command.
+
+echo what is your name?; echo my name is bond, james bond
+
+[Don't use single or double quotion marks. Like: echo what's your name?]
+
+````````````````````````````````````````````````````````````````````````
+
+14. What is the difference is ; and && in bash script?
+
+ ;	-----> will run all command, regardless of previous command failure
+&&	-----> will only run only when previous command works properly
+
+Example:
+
+cat GitHub/Linux-101/bash_scripting ; echo "This is how I learn bash."		// works fine because do we have file named bash_scripting
+cat GitHub/Linux-101/python_scripting ; echo "This is how I learn python"	// also works but throws an error in first command since there is no file named python_scripting
+cat GitHub/Linux-101/bash_scripting && echo "This is how I learn bash."		// works fine like the first command
+cat GitHub/Linux-101/python_scripting && echo "This is how I learn python"	// doesn't work. The program will halt because of failure in first command where it couldn't find a file named python_scripting
+
+[So its a good idea to prefer "&&" over semicolon.]
+```````````````````````````````````````````````````````````````````````````
+
+15. What is the difference in && and || in bash script?
+
+ &&	--------> will only run if previous command run properly
+ ||	--------> will only run if previous command faild.
+
+Example:
+
+cat GitHub/Linux-101/bash_scripting || echo "This command doesn't run."		//Since we do have file named bash_scripting, second command won't be executed.
+cat GitHub/Linux-101/python_scripting || echo "This file doesn't exit."		//The first command fails because there is no file named python_scripting. So second command is executed.
+
+````````````````````````````````````````````````````````````````````````
+
+16. 
