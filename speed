@@ -4,6 +4,7 @@
 
 pranav -mukherjee		// here minus will remove search results which include 'mukherjee'
 
+`````````````````````````````````````````````
 2. Speed up Firefox by pre-loading RAM for it
 
 sudo dnf install profile-sync-daemon	//use apt if u are on Debian based distro
@@ -14,7 +15,8 @@ psd p					//command to verify whether change is in effect or not
 Enjoy.					//For more detail see Arch wiki. Side-effect = Slows the login screen in each boot.
 
 
-3. Replace legacy tools with new tool made out of Rust
+````````````````````````````````````````````````````````````````
+3. Replace legacy tools with new tool made out of Rust for speed
 
 sudo dnf install <package name>		//Package names are quoted below.
 nano .config/fish/config.fish		//Create an alias to override legacy tools
@@ -24,15 +26,19 @@ nano .config/fish/config.fish		//Create an alias to override legacy tools
 	alias ls="exa"			//But first: sudo dnf install exa
 Enjoy
 
-4. (Optional) Install nuShell		//A shell made out of Rust
+``````````````````
+4. Install nuShell			//A shell made out of Rust. (But I use/prefer Fish)
 
 sudo dnf install nushell
 config set skip_welcome_message $true	//To remove welcome message
 
+
+````````````````````````````````````````````````````````````````````````````
 5. Make any shell suggestion fast using Universal Shell Prompt configuration.
 
 sudo dnf install starship
 
+``````````````````````````````
 6. Search & learn from terminal			//Needs internet
 
 curl cheat.sh/<string>			//For example: cheat.sh/git
@@ -42,12 +48,26 @@ curl cht.sh/<language>/:list		//Example: cht.sh/rust/:list		~ show all cheatshea
 curl cht.sh/<language>/:learn		//Learn ANY programming langauge.	~ Example: cht.sh/rust/:learn
 curl cht.sh/<langauge>/:<term>		//Example: cht.sh/rust/:self		~ will tell everything about "self" in Rust. Cool.
 
+````````````````````````````````````````
 7. Directly commit and add files to repo
 
 git commit -am "hey there"	// -a will Add all the files in current working directory
 
 
+``````````````````````````
 8. Search commands quickly
 
 ctrl + r		//Type something and press 'ctrl + r'. You will see past command based on what you wrote.
 man -k <something>	//Suppose you forget command but you know a part of its existance. Then use thing command.
+
+
+`````````````````````````````
+9. Find all empty directories
+
+find . -type d -empty
+
+find . -type d -empty -delete
+[Warning: Be carefull with this second command. Run it at your own risk.]
+
+`````````````````````````````````````````````````````````````````````````````
+10.
