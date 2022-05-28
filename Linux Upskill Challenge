@@ -47,3 +47,11 @@ find /home/pranav -name Penuma.mp3
 8. Make a script executable
 
 chmod +x /path/to/script.sh
+
+```````````````````````````
+
+9. Multiple Ways to jump back or go to previous directory
+
+cd -				// the fastest way to go to previous directory
+cd ../..			// will go 2 directories back. [More (two-dots + Forward slash)] = more directories back
+cd /path/of/directory		// will go to particular directory

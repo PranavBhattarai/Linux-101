@@ -40,12 +40,12 @@ echo "Hi, $name"
 
 
 ````````````````````````````````````````````````````
-5. Define prameter(s) and show how to run the script.
+5. Example of postitional prameter
 
 #!/bin/bash
 
 name=$1
-palce=$2
+place=$2
 
 echo "What is your name?"
 sleep 1
@@ -58,16 +58,17 @@ sleep 1
 echo "I'm from $place"
 
 sleep 2
+
 echo "So $name, you came all the way from $place looking for job. Am I right?"
 sleep 1
 echo "yes"
 
-[Run this file using: ./scriptname.sh pranav parasi]
-[This is called positional argument/parameter. We are using position of parameter to call it.]
-[Note: Script can run regardless of argument. In such case, it will print empty space.]
+[Run this file like: ./scriptname.sh pranav parasi]
+[We are using position of parameter to call it. $1 denote the first position and so on.]
+[Note: Script can run regardless of providing parameter. In such case, it will print empty space.]
 
 
-```````````````````````````````````````````````````````````````````````
+```````````````````````````````````````````````````````````````````````````````````````````````````
 
 6. How to run Linux command inside bash script? (tips: using variables)
 
@@ -126,7 +127,6 @@ echo $(($RANDOM%4))	//print randomly from 0 to 3; excluding 4.
 
 11. How to write if-else loop?
 
-
 #!/bin/bash
 
 echo "Hey, do you like this repository? (yes/no)"
@@ -183,4 +183,22 @@ cat GitHub/Linux-101/python_scripting || echo "This file doesn't exit."		//The f
 
 ````````````````````````````````````````````````````````````````````````
 
-16. 
+16. Usage of Nested Loops, Or condition in loops. 
+
+#!/bin/bash
+echo "What is your age?"
+read age
+
+#here, saying "adult" acts as an cheetsheet for teenagers. -gt means greater than
+if [[ $age -gt 17 || $age == "adult" ]]; then
+    echo "Welcome to club!"
+
+#If condition of previus if-statement is not satisfied, the nested loop written below is used.
+elif [[ $USER == "pranav" ]]; then
+    echo "You are the VIP member of this club. Welcome sir."
+
+else
+    echo "Sorry, you are not mature enough to join the club."
+fi
+
+````````````````````````````````````````````````````````````````
