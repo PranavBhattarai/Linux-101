@@ -39,7 +39,7 @@ config set skip_welcome_message $true	//To remove welcome message
 sudo dnf install starship
 
 ``````````````````````````````
-6. Search & learn from terminal			//Needs internet
+6. Search & learn from terminal
 
 curl cheat.sh/<string>			//For example: cheat.sh/git
 curl cht.sh/<string>								~ "cht" is just an alias for "cheat".
@@ -48,7 +48,23 @@ curl cht.sh/<language>/:list		//Example: cht.sh/rust/:list		~ show all cheatshea
 curl cht.sh/<language>/:learn		//Learn ANY programming langauge.	~ Example: cht.sh/rust/:learn
 curl cht.sh/<langauge>/:<term>		//Example: cht.sh/rust/:self		~ will tell everything about "self" in Rust. Cool.
 
-````````````````````````````````````````
+==================================================================================================================================
+
+dig <> <>				//DNS Utility look. 
+dig +short google.com			//gives google public ip address
+dig <> @dns.toys			//A DNS Utility tool made by someone and named it "dns.toys"	//this has many useful tricks
+dig help @dns/toys			//to get some example of commands
+
+#Create a shortcut to clean dig output/result of dns.toys
+
+alias dy="dig +noall +answer +additional $argv[1] @dns.toys"
+
+After that alias, we can just type:	dy <>
+For example:				dy kathmandu.weather	dy 1USD-NPR.fx		dy kathmandu.time	dy 32GB-MB.unit
+
+[Above commands needs internet to work.]
+
+`````````````````````````````````````````````
 7. Directly commit and add files to repo
 
 git commit -am "hey there"	// -a will Add all the files in current working directory
