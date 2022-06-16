@@ -52,6 +52,13 @@ chmod +x /path/to/script.sh
 
 9. Multiple Ways to jump back or go to previous directory
 
-cd -				// the fastest way to go to previous directory
+cd -				// fastest way to jump previous directory. Its possible because cd command is looking at $OLDPWD value
 cd ../..			// will go 2 directories back. [More (two-dots + Forward slash)] = more directories back
 cd /path/of/directory		// will go to particular directory
+
+
+[This means, in bash we have:		echo $OLDPWD ]
+
+``````````````````````````````````````````````````````
+
+10. 

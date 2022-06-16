@@ -61,7 +61,7 @@ alias dy="dig +noall +answer +additional $argv[1] @dns.toys"
 
 After that alias, we can just type:	dy <>
 For example:				dy kathmandu.weather	dy 1USD-NPR.fx		dy kathmandu.time	dy 32GB-MB.unit
-
+								dy 192.168.0.0/16.cidr	---> will give u first & last ip
 [Above commands needs internet to work.]
 
 `````````````````````````````````````````````
