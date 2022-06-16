@@ -55,3 +55,8 @@ journalctl -x -b 0 > pranav.txt			// share/upload the file in community
 5. PAM module looking for "fingerprint" authentication even when there is so hardware capability.
 
 sudo authselect disable-feature with-fingerprint	// this command will stop unneccessary logs from appearing about fingerprint
+
+
+6. VMWare not starting due to "failed to install vmware neccessary kernel module"		//A persistant issue since linux 5.17
+
+sudo CPATH=/usr/lib/gcc/x86_64-redhat-linux/12/include/ vmware-modconfig --console --install-all	//Works perfectly on Fedora 36
