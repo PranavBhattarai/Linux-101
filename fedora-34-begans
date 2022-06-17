@@ -221,3 +221,10 @@ touch .gitignore				//Write file and foldernames in each line to ignore.
 						//Use backward slash (i.e /) when your reach the end of file or folder name.
 
 [Now you can delete those files and folder without having to reappear when you type, "git pull".]
+
+43. Move back-n-forth between two directories
+
+nextd		//move to next directory
+prevd		//move to previous directory
+
+[For this to work, you need to jump into some directory using "cd" command. Otherwise there is no place to jump.]
