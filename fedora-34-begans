@@ -228,3 +228,10 @@ nextd		//move to next directory
 prevd		//move to previous directory
 
 [For this to work, you need to jump into some directory using "cd" command. Otherwise there is no place to jump.]
+
+44. Install/Configure Firefox
+
+- install media codecs and libraries mentioned in Fedora documentation
+- enable some Firefox configs which are disabled by Fedora Devs as mentioned in Fedora documentaion
+
+[Fedora by default omit proprietary licensing conflict to avoid legal challenges it can bring.]
