@@ -61,4 +61,36 @@ cd /path/of/directory		// will go to particular directory
 
 ``````````````````````````````````````````````````````
 
-10. 
+10. Create a file and write into it in one go
+
+echo "Just another trick" > file.txt
+
+or
+ 
+cat > fileName.txt		//will create the file name; else overide the existing file
+
+[Press "Ctrl + d" to save the file]
+
+cat >> fileName.txt		//add new lines in existing file; else create a new file to write
+
+11. CAT scripting...
+
+cat << Pranav > File.txt	//create a new file else overide file named "File.txt" where "Pranav" marks end of file
+
+
+12. Move/copy files inside current directory without having to write full path
+
+mv image.png ./Image
+
+[Here we have to be inside a directory which has Image folder]
+
+mv image.png ./Image/picture.png	//move + rename the file inside current subdirectory
+
+14.  Move multiple files
+
+mv this that.txt ./folder	//move folder named "this", file named "that.txt" inside folder named "folder"
+
+
+15. Create multiple directories one inside another in one shot
+
+mkdir -p first/second/third	//creates "first" folder & create "second" folder inside first folder & "thrid" folder inside second folder.
