@@ -229,9 +229,15 @@ prevd		//move to previous directory
 
 [For this to work, you need to jump into some directory using "cd" command. Otherwise there is no place to jump.]
 
-44. Install/Configure Firefox
+44. Install/Configure Firefox properly
 
-- install media codecs and libraries mentioned in Fedora documentation
+- install all necessary media codecs and libraries mentioned in Fedora documentation
 - enable some Firefox configs which are disabled by Fedora Devs as mentioned in Fedora documentaion
 
 [Fedora by default omit proprietary licensing conflict to avoid legal challenges it can bring.]
+
+45. Check flaptak app permission given to the app
+
+	flatpak info --show-permissions <app-id>			//get app id using this command:	flatpak list
+example:
+	flatpak info --show-permissions com.github.KRTirtho.Spotube
