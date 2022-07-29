@@ -234,10 +234,24 @@ prevd		//move to previous directory
 - install all necessary media codecs and libraries mentioned in Fedora documentation
 - enable some Firefox configs which are disabled by Fedora Devs as mentioned in Fedora documentaion
 
-[Fedora by default omit proprietary licensing conflict to avoid legal challenges it can bring.]
+[Fedora save itself from proprietary licensing lawsuit by not installing certain packages by default.]
 
 45. Check flaptak app permission given to the app
 
-	flatpak info --show-permissions <app-id>			//get app id using this command:	flatpak list
+	flatpak info --show-permissions <app-id>
 example:
 	flatpak info --show-permissions com.github.KRTirtho.Spotube
+
+[Get app ID using this command ------->	flatpak list]
+
+46. Install Virtualization in one go
+
+sudo dnf install @virtualization
+
+[There are only handfull of @<command> available. Most of them are to make devs life easier.]
+[Virt Manager (aka Virtual Manager) which uses KVM & Qemu is the best free alternative to VMware & VirtualBox.]
+
+
+47. 
+
+
