@@ -1,0 +1,9 @@
+#Started from July 29, 2022. I realized maintaining secuity is REALLY important even though Linux default state is quite secure.
+
+1. Make sure "Secure Boot" is enabled in BIOS.
+
+sudo mokutil --sb-state
+
+[command will tell whether its enabled or disable.]
+
+2.
