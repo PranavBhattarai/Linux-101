@@ -2,8 +2,10 @@
 
 1. Make sure "Secure Boot" is enabled in BIOS.
 
-sudo mokutil --sb-state
+	sudo mokutil --sb-state
+OR,
+	dmesg | grep secure
 
-[command will tell whether its enabled or disable.]
+[both command will tell whether SecureBoot is enabled or disable. Enable it if its not already.]
 
 2.
