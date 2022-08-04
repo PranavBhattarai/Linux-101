@@ -85,5 +85,16 @@ find . -type d -empty
 find . -type d -empty -delete
 [Warning: Be carefull with this second command. Run it at your own risk.]
 
-`````````````````````````````````````````````````````````````````````````````
-10.
+````````````````````````````````````````````````````````````````````````````````````````
+
+10. Don't use VirtualBox or VMware. Rather use Virt-Manager which is free & support KVM.
+
+- Extra VMware image & convert it into qcow2 file:
+
+	qemu-img convert -f vmdk -O qcow2 path/to/file/foo.vmdk path/to/file/foo.qcow2
+
+[Qemu image which has "qcow2" file extension. qcow2 stands for "Qemu Copy On Write".]
+
+`````````````````````````````````````````````````````````````````````````````````````````
+
+11. 
