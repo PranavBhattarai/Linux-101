@@ -61,22 +61,26 @@ cd /path/of/directory		// will go to particular directory
 
 ``````````````````````````````````````````````````````
 
-10. Create a file and write into it in one go
+10. Cat Scenario
 
-echo "Just another trick" > file.txt
-
-or
- 
 cat > fileName.txt		//will create the file name; else overide the existing file
+cat >> fileName.txt             //add new lines in existing file; else create a new file to write
 
+cat << Pranav > File.txt        //create a new file else overide file named "File.txt" where "Pranav" marks end of file
 [Press "Ctrl + d" to save the file]
 
-cat >> fileName.txt		//add new lines in existing file; else create a new file to write
+11. Echo Scenario
 
-11. CAT scripting...
+echo "linux.org" > website.txt		// create new file or override exisiting file named "website.txt"
+echo "regex.com" >> website.txt		// will add new line in file named "websiet.txt"
 
-cat << Pranav > File.txt	//create a new file else overide file named "File.txt" where "Pranav" marks end of file
+# < redictor is used for standard input.
 
+# 2> redictor is used for standard error. 
+Example:
+	ls /path/to/folder/which/do/not/exit 2> error.txt
+
+[will include error occured in new or exisitng file named "error.txt"]
 
 12. Move/copy files inside current directory without having to write full path
 
@@ -94,3 +98,13 @@ mv this that.txt ./folder	//move folder named "this", file named "that.txt" insi
 15. Create multiple directories one inside another in one shot
 
 mkdir -p first/second/third	//creates "first" folder & create "second" folder inside first folder & "thrid" folder inside second folder.
+
+
+16. Basic terminal nagivation while reading documentation/script/note through terminal
+
+g ------>> jump to first line of terminal content
+G ------>> move to end line of terminal content
+/ ------>> search
+q ------>> quit
+
+
