@@ -60,3 +60,15 @@ sudo authselect disable-feature with-fingerprint	// this command will stop unnec
 6. VMWare not starting due to "failed to install vmware neccessary kernel module"		//A persistant issue since linux 5.17
 
 sudo CPATH=/usr/lib/gcc/x86_64-redhat-linux/12/include/ vmware-modconfig --console --install-all	//Works perfectly on Fedora 36
+
+[Don't use VMware or VirtualBox. Instead use Virt-Manager which is much more advance and its free & opensource.]
+
+
+7. Track a buggy touchpad
+
+sudo libinput debug-events --set-click-method=clickfinger
+
+[part from "clickfinger", there're other modes u can look into to indentify if the problem u are facing is hardware issue or software/fimrware issue.]
+
+
+8.
