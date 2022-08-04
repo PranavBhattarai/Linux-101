@@ -248,10 +248,16 @@ example:
 
 sudo dnf install @virtualization
 
-[There are only handfull of @<command> available. Most of them are to make devs life easier.]
-[Virt Manager (aka Virtual Manager) which uses KVM & Qemu is the best free alternative to VMware & VirtualBox.]
+[There are only handfull of Module or Group available. Most of them are to make devs life easier.]
+[Virt Manager (aka Virtual Manager) which uses KVM & support Qemu images, is the best free alternative to VMware & VirtualBox.]
+
+47. Compression and Decompression of files using tool: gzip
+
+gzip <file-name-to-compress>		// to compress the file
+gzip -l <compressed-file-name>		// to see how well it compressed
+gzip -d <compressed-file-name>		// to decompress the zip file
+
+[Note: gzip only support compress/decompress of single file. It can't decompress a compressed directory. For that, we need TAR.]
 
 
-47. 
-
-
+48.
