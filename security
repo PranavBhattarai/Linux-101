@@ -8,6 +8,8 @@ OR,
 
 [both command will tell whether SecureBoot is enabled or disable. Enable it if its not already.]
 
+------------------------------------------------------------------------------------------------------
+
 2. In Windows, if you open doubtful or unknown document:
 
 -> Never enable "Macros" if the document ask.
@@ -16,9 +18,16 @@ OR,
 [Macros can contain scripts that can damage the OS security.]
 [This primarly affects MS Word, PowerPoint, Excel, etc.]
 
+------------------------------------------------------------------------------------------------------
+
 3. In Windows, application shortcuts can be dangerous because:
 
 -> Windows by default hide file extension.
--> Executable script/program icons can be changed to make it look like a picture or vidoe or anything.
+-> Executable script/program icons can be changed to make it look like a picture or video to confuse.
+-> Know what/which application/software/script is asking for administrative permission.
 
 [Always check file type before running them]
+
+-------------------------------------------------------------------------------------------------------
+
+4. 

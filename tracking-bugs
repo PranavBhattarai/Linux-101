@@ -71,4 +71,7 @@ sudo libinput debug-events --set-click-method=clickfinger
 [part from "clickfinger", there're other modes u can look into to indentify if the problem u are facing is hardware issue or software/fimrware issue.]
 
 
-8.
+8.Track apps weird behaviour which is installed from Flatpak
+
+	 flatpak run <app-id>
+example: flatpak run org.telegram.desktop		//since Telegram crashes a lot
