@@ -1,8 +1,32 @@
 /- A search on speed up the process. ANY process-\
 
-1. How to google "pranav" in such a we don't get famous 'pranav mukherjee'
+1. Google search tricks 
+
+i.How to google "pranav" in such a we don't get famous 'pranav mukherjee'
 
 pranav -mukherjee		// here minus will remove search results which include 'mukherjee'
+
+`````````````````````````````````````````````````````````````````````````````````````````````````````
+ii. How to search two terms?
+
+	pranav AND bhattarai		//the use of AND operator
+or
+	"pranav" "bhattarai"
+
+`````````````````````````````````````````````````````````````````````````````````````````
+iii. How to search forgotten word but sitll knows the phrase?
+
+	"learn * languague in 3 months"
+
+iv. Search file type instead of web page.
+
+	filetype:pdf ccna labs			//will search all pdf avaiable for CCNA labs
+
+v. Search on specific website.
+
+	site:freecodecamp.org rust		//will give all search result from particular website.
+
+
 
 `````````````````````````````````````````````
 2. Speed up Firefox by pre-loading RAM for it
@@ -50,6 +74,7 @@ curl cht.sh/<langauge>/:<term>		//Example: cht.sh/rust/:self		~ will tell everyt
 
 ==================================================================================================================================
 
+7. Dig commands scenario
 dig <> <>				//DNS Utility look. 
 dig +short google.com			//gives google public ip address
 dig <> @dns.toys			//A DNS Utility tool made by someone and named it "dns.toys"	//this has many useful tricks
@@ -64,11 +89,12 @@ For example:				dy kathmandu.weather	dy 1USD-NPR.fx		dy kathmandu.time	dy 32GB-M
 								dy 192.168.0.0/16.cidr	---> will give u first & last ip
 [Above commands needs internet to work.]
 
-`````````````````````````````````````````````
-7. Directly commit and add files to repo
+``````````````````````````````````````````````````````````````
+7. Let say, you forget to put "sudo" in previous command.
 
-git commit -am "hey there"	// -a will Add all the files in current working directory
+sudo !!				-------> works in bash shell.
 
+[!! work like copy-paste the previous command. This command doesn't work in Fish shell.]
 
 ``````````````````````````
 8. Search commands quickly
