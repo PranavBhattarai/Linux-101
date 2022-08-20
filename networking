@@ -12,6 +12,12 @@ But if question mention/give you subnet mask, we should ignore above table (i.e 
 	upto /16	below	 /24 ----> class B
 	upto /24	below	 /32 ----> class C
 
+1.1 Effect of cidr on calculation of ip address:
+
+	1.2.3.4		/8	------>> if subnetted, we will get ip address starting from	1.X.X.X		to	1.255.255.255
+	1.2.3.4		/16	------>> if subnetted, we will get ip address starting from	1.2.X.X		to	1.2.255.255
+	1.2.3.4		/24	------>> if subnetted, we will get ip address starting from	1.2.3.X		to	1.2.3.255.255
+
 ===========================================================================================================================
 
 2. Commandline tools
