@@ -1,0 +1,29 @@
+#Understanding networking in smart way:
+
+1. If question/asker will give u only IP address but not the subnet mask, than we should look at "ip adderss class table"
+i.e :
+	Class A (0  -  127)
+	Class B (128 - 191)
+	Class C (192 - 223)
+
+But if question mention/give you subnet mask, we should ignore above table (i.e ip address class table), and use this logic:
+
+	upto /8		below	 /16 ----> class A
+	upto /16	below	 /24 ----> class B
+	upto /24	below	 /32 ----> class C
+
+===========================================================================================================================
+
+2. Commandline tools
+
+ipcalc <ip-address>/<cidr>
+ipcalc <ip-address> <subnet-mask>
+
+subnetcalc <ip-address>/<cidr>
+subnetcalc <ip-address> <subnet-mask>
+
+[for more command sample: curl cht.sh/<command>]
+
+========================================================================================================
+
+3. 
