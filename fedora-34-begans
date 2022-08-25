@@ -260,4 +260,11 @@ gzip -d <compressed-file-name>		// to decompress the zip file
 [Note: gzip only support compress/decompress of single file. It can't decompress a compressed directory. For that, we need TAR.]
 
 
-48.
+48. Uninstall or remove installed rpm package
+
+rpm -qa | grep -i <package>		// To search the exact package name to uninstall
+sudo rpm -e <package>			// Copy that exact package name and uninstall it
+
+[Example:	i) rpm -qa | grep -i dbeaver	ii) sudo rpm -e dbeaver-ce-22.1.5-stable.x86_64 	OR  sudo rpm -e dbeaver-ce]
+
+49.
