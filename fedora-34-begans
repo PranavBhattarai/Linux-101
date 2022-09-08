@@ -267,4 +267,13 @@ sudo rpm -e <package>			// Copy that exact package name and uninstall it
 
 [Example:	i) rpm -qa | grep -i dbeaver	ii) sudo rpm -e dbeaver-ce-22.1.5-stable.x86_64 	OR  sudo rpm -e dbeaver-ce]
 
-49.
+49. Find pid and kill parent process
+
+pidof <>		example:->	pidof sudo
+killall -9 <>		example:->	killall -9 8526
+
+#works fine with sudo installation which u abruptly stopped.
+
+10. Get a repositry URL/link when u are in your local copy of source-code.
+
+git remote -v
