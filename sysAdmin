@@ -17,7 +17,7 @@ include /etc/nginx/sites-enabled/*;
 
 [Note: all files will be inside "sites-available" and we've to create symlink inside sites enabled]
 
-3. Setup Docker
+3. Setup Docker					// Don't use Docker when Podman exist.
 
 sudo dnf install moby-engine			//weird
 sudo docker login				//optional
@@ -26,7 +26,8 @@ sudo docker run -it <distro>			//Will run the distro.	ex: sudo docker run -it ub
 exit						//Will close container.
 sudo docker attach <container_id>		//Will link two or more terminal running same docker
 
-[Note: docker image uses the same kernel which host OS has. Distros which run inside docker container doesn't have its own kernel.]
+[Note: Docker image uses the same kernel which host OS has. Distros which run inside docker container doesn't have its own kernel.]
+[Note: Since docker requires root permission to do things, rather use Podman which is compatible to almost all Docker command.]
 
 4. Keep a log of command you type
 
