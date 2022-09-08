@@ -16,7 +16,6 @@ echo "hello world"
 echo "Hi, Pranav, how are you?"
 sleep 1
 echo "I'm good. What about you?"
-sleep 1
 
 
 `````````````````````````````````````````````````
@@ -72,9 +71,11 @@ echo "yes"
 
 6. How to run Linux command inside bash script? (tips: using variables)
 
+#!/bin/bash
 echo "What time and date today is?"
 time=$(date)
 sleep 1
+
 echo "Today is $time"
 
 sleep 2
@@ -163,10 +164,10 @@ echo what is your name?; echo my name is bond, james bond
 
 Example:
 
-cat GitHub/Linux-101/bash_scripting ; echo "This is how I learn bash."		// works fine because do we have file named bash_scripting
-cat GitHub/Linux-101/python_scripting ; echo "This is how I learn python"	// also works but throws an error in first command since there is no file named python_scripting
+cat GitHub/Linux-101/bash_scripting ; echo "This is how I learn bash."		// works fine because do we have 'bash_scripting' file
+cat GitHub/Linux-101/python_scripting ; echo "This is how I learn python"	// throws an error in first command but still runs fine
 cat GitHub/Linux-101/bash_scripting && echo "This is how I learn bash."		// works fine like the first command
-cat GitHub/Linux-101/python_scripting && echo "This is how I learn python"	// doesn't work. The program will halt because of failure in first command where it couldn't find a file named python_scripting
+cat GitHub/Linux-101/python_scripting && echo "This is how I learn python"	// program will halt since python_scripting don't exist
 
 [So its a good idea to prefer "&&" over semicolon.]
 ```````````````````````````````````````````````````````````````````````````
@@ -202,3 +203,26 @@ else
 fi
 
 ````````````````````````````````````````````````````````````````
+
+17. While loops to print mantra 5 times
+
+#!/bin/bash
+x=1
+while [[ $x -le 5 ]]
+do
+    echo "1) OM Namah Shiwaya"
+done
+
+```````````````````````````````````````````
+
+18. Using while loop asking for your user input.
+
+#A program which ask all question of exam are solved or not
+
+x=1
+while [[ $x -le 15 ]]
+do
+    read -p "Have you solved question $x?"
+    (( x ++ ))
+done
+echo "Congratulation, I think you will pass the exam"
