@@ -92,7 +92,8 @@ For example:				dy kathmandu.weather	dy 1USD-NPR.fx		dy kathmandu.time	dy 32GB-M
 ``````````````````````````````````````````````````````````````
 7. Let say, you forget to put "sudo" in previous command.
 
-sudo !!				-------> works in bash shell.
+sudo !!			-------> works in bash shell.
+Alt + S			-------> works in fish shell.
 
 [!! work like copy-paste the previous command. This command doesn't work in Fish shell.]
 
