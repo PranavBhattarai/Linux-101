@@ -1,3 +1,5 @@
+#A good admin support both Windows and Linux user simulatenously. Even though it sound like the task is assigned for "IT-support".
+
 1. Setting up vagrant
 
 sudo dnf install vagrant
@@ -66,7 +68,7 @@ tailf /path/to/log		// to see realtime change in log
 
 mtr google.com			//mtr is an opensource utility tool which merges the functionality of 'traceroute' & 'ping'.
 
-[]
+[For more: curl cht.sh/mtr]
 
 ``````````````````````````````````
 
@@ -78,5 +80,26 @@ watch ls			//See realtime change in new files/folder being created since "watch"
 
 ```````````````````````````````````````````````````````````````````````````````````````
 
-11. 
+11. Create a password for Windows users.
 
+	net user pranav *				// give u more privacy if someone is looking at your screen
+or
+	net user pranav 'write-password-here'		// give u less privacy since they can see what you are typing
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+12. Force/Let Windows user to change their password when they log on
+
+net user pranav /logonpasswordchg:yes			// admin shouldn't know other users' password. #Privacy
+
+[helpful when new emplyoee (say, pranav) joins the company. Admin need to create a new user profile for him to use.]
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+13. Create a new user in Windows
+
+	net user pranav * /add
+
+`````````````````````````````````````````````````````````````````
+
+14.

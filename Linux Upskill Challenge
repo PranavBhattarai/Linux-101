@@ -1,5 +1,9 @@
-sudo adduser pragya	//to add a new user
-sudo passwd pragya	//need to have the password inorder to use, I guess
+1. How to create a new user and a new password for that user?
+ 
+	sudo adduser <username>		//to add a new user
+ex:	sudo adduser pragya
+
+	sudo passwd <username>		//to create a new password for user
 
 // Note: new user can't run 'sudo' commands with elevated privileges by default.
 // Any such attempts are reported in log for administrative user to see.
@@ -9,17 +13,20 @@ sudo passwd pragya	//need to have the password inorder to use, I guess
 whoami		//see which user I am currently
 su - pragya	//will switch to named Pragya 
 exit		//will switch back to Pranav if you are in Pragya, else close the terminal.
-logut		//will switch back to Pranav
+logout		//will switch back to Pranav
 su - pranav	//will swtich back to Pranav
 su -		//will switch to Root user
 
-usermod -aG sudo pragya		//Pragya will also have all admin right. Not Recommanded
-usermod -aG wheel pragya	//In fedora, "wheel" is the default group where admins are listed.
-sudo deluser pragya sudo	//Pragya will no longer have admin right.
+usermod -aG sudo pragya		// Add the user (pragya) as an admin
+usermod -aG wheel pragya	// In fedora, "wheel" is the default group where admins are listed.
+sudo deluser pragya sudo	// Remove the user (pragya) from admin groups
+sudo userdel pragya		// Delete the user (pragya)
 
 ``````````````````````````````````````````````````````````````````````````
 2. How can two user copy their files?
-sudo cp /home/pragya/Pictures/cat.png  /home/pranav/Pictures	//For this pragya needs be in list of sudoers group.
+sudo cp /home/pragya/Pictures/cat.png  /home/pranav/Pictures	
+
+[To copy files between users, one need have sudo permission.]
 
 ``````````````````````````````````````````````````````````````````````
 3.
@@ -108,3 +115,10 @@ G ------>> move to end line of terminal content
 q ------>> quit
 
 
+17. Force a user to create a new password
+
+passwd -e <username>		//here e flag will expire the existing password.
+
+[let say, the password of a user is leaked. Got to do something about it as an admin.]
+
+18. 

@@ -1,4 +1,4 @@
-/- A search on speed up the process. ANY process-\
+/- A research to speed up the process. ANY process-\
 
 1. Google search tricks 
 
@@ -24,7 +24,7 @@ iv. Search file type instead of web page.
 
 v. Search on specific website.
 
-	site:freecodecamp.org rust		//will give all search result from particular website.
+	site:freecodecamp.org rust		//will give all search result from FreeCodeCamp website about Rust.
 
 
 
@@ -60,7 +60,7 @@ config set skip_welcome_message $true	//To remove welcome message
 ````````````````````````````````````````````````````````````````````````````
 5. Make any shell suggestion fast using Universal Shell Prompt configuration.
 
-sudo dnf install starship
+sudo dnf install starship		// another thing made out of rust
 
 ``````````````````````````````
 6. Search & learn from terminal
@@ -114,9 +114,9 @@ find . -type d -empty -delete
 
 ````````````````````````````````````````````````````````````````````````````````````````
 
-10. Don't use VirtualBox or VMware. Rather use Virt-Manager which is free & support KVM.
+10. Don't use VMware (or VirtulBox). Rather use Virt-Manager which is free & support KVM.
 
-- Extra VMware image & convert it into qcow2 file:
+- Convert VMware's vmdk file into qcow2 file:
 
 	qemu-img convert -f vmdk -O qcow2 path/to/file/foo.vmdk path/to/file/foo.qcow2
 
