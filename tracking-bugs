@@ -74,4 +74,21 @@ sudo libinput debug-events --set-click-method=clickfinger
 8.Track apps weird behaviour which is installed from Flatpak
 
 	 flatpak run <app-id>
-example: flatpak run org.telegram.desktop		//since Telegram crashes a lot
+
+[example: flatpak run org.telegram.desktop		//since Telegram crashes a lot]
+
+8. Catching Display buggy events through Kernel parameters to report
+
+	i. PowerOn the device
+	ii. Press ESC until Grub menu appear
+	iii. Go the kernel version which u prefer
+	iv. Press e to edit that kernel paramter
+	v. Now write your kernel parameter in the line which says, "linux".
+	   In this case, add this:	drm.debug=0x1e	log_buf_len=1M
+	vi. Press Ctrl X to boot.
+
+	cat /proc/cmdline		// To verify whether kernel parameter is loaded or not
+
+[This kernel parameter will automatically disapper in next boot.]
+
+
