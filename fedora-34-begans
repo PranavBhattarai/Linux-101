@@ -183,6 +183,12 @@ dnf repolist all
 dnf repolist all | grep -i disabled
 dnf repolist all | grep -i enabled
 
+[ Delete the repo which you no longer need ]
+
+cd /etc/yum.repos.d
+ls
+sudo rm <repo-name>
+
 34. List all user installed python packages
 
 pip list --user

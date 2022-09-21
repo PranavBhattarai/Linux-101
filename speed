@@ -72,6 +72,7 @@ curl cht.sh/<language>/:list		//Example: cht.sh/rust/:list		~ show all cheatshea
 curl cht.sh/<language>/:learn		//Learn ANY programming langauge.	~ Example: cht.sh/rust/:learn
 curl cht.sh/<langauge>/:<term>		//Example: cht.sh/rust/:self		~ will tell everything about "self" in Rust. Cool.
 
+[similar offline command:   tldr <> 	// gives u basic info/command of any command with example.]
 ==================================================================================================================================
 
 7. Dig commands scenario

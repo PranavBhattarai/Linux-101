@@ -99,7 +99,22 @@ net user pranav /logonpasswordchg:yes			// admin shouldn't know other users' pas
 13. Create a new user in Windows
 
 	net user pranav * /add
+or,
+	net user pranav #007#007 /add /logonpasswordchg:yes	// Create a new user with temporary password which need to change later
 
+[here, #007#007 is a temporary password. And pranav is the username of the user.]
 `````````````````````````````````````````````````````````````````
+
+14. Delete the user profile in Windows
+
+	net user pranav /del		// will delete Windows user named "pranav"
+or
+	remove-localuser pranav
+
+[Note: If you want GUI to create & manage user account, then go: Computer Management > Local User and Groups > Users]
+
+15. Get all Windows user info
+
+get-localuser
 
 14.
