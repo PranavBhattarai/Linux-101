@@ -255,6 +255,7 @@ example:
 sudo dnf install @virtualization
 
 [There are only handfull of Module or Group available. Most of them are to make devs life easier.]
+[Always disable modules if you want to test a pre-release version of a distro like Fedora]
 [Virt Manager (aka Virtual Manager) which uses KVM & support Qemu images, is the best free alternative to VMware & VirtualBox.]
 
 47. Compression and Decompression of files using tool: gzip
@@ -268,7 +269,7 @@ gzip -d <compressed-file-name>		// to decompress the zip file
 
 48. Uninstall or remove installed rpm package
 
-rpm -qa | grep -i <package>		// To search the exact package name to uninstall
+rpm -qa | grep -i <package>		// To search the exact package name to uninstall	//qa means "query all" packages
 sudo rpm -e <package>			// Copy that exact package name and uninstall it
 
 [Example:	i) rpm -qa | grep -i dbeaver	ii) sudo rpm -e dbeaver-ce-22.1.5-stable.x86_64 	OR  sudo rpm -e dbeaver-ce]
@@ -280,6 +281,13 @@ killall -9 <>		example:->	killall -9 8526
 
 #works fine with sudo installation which u abruptly stopped.
 
-10. Get a repositry URL/link when u are in your local copy of source-code.
+50. Get a repositry URL/link when u are in your local copy of source-code.
 
 git remote -v
+
+
+51. Make GNOME-Terminal to open particular shell
+
+gnome-terminal -- fish
+
+#This can be used to create custom shortkey. like Super + W

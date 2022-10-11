@@ -1,6 +1,7 @@
 1. How to create a new user and a new password for that user?
  
 	sudo adduser <username>		//to add a new user
+or,	sudo useradd <username>
 ex:	sudo adduser pragya
 
 	sudo passwd <username>		//to create a new password for user
@@ -19,6 +20,7 @@ su -		//will switch to Root user
 
 usermod -aG sudo pragya		// Add the user (pragya) as an admin
 usermod -aG wheel pragya	// In fedora, "wheel" is the default group where admins are listed.
+
 sudo deluser pragya sudo	// Remove the user (pragya) from admin groups
 sudo userdel pragya		// Delete the user (pragya)
 
@@ -107,7 +109,7 @@ mv this that.txt ./folder	//move folder named "this", file named "that.txt" insi
 mkdir -p first/second/third	//creates "first" folder & create "second" folder inside first folder & "thrid" folder inside second folder.
 
 
-16. Basic terminal nagivation while reading documentation/script/note through terminal
+16. Basic vi nagivation while reading documentation/script/note through terminal
 
 g ------>> jump to first line of terminal content
 G ------>> move to end line of terminal content
@@ -121,4 +123,11 @@ passwd -e <username>		//here e flag will expire the existing password.
 
 [let say, the password of a user is leaked. Got to do something about it as an admin.]
 
-18. 
+18. Chmod the file | File Permissions
+
+chmod u+x filename		// allows file to be executed by anyone
+chmod u-x filename		// allows file to be executed by owner
+
+chown pragya filename		// change the owner of file to pragya
+chgrp ladies filename		// change the group of file to ladies
+
