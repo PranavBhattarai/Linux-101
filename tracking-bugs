@@ -35,7 +35,7 @@ Restart the system. Now you won't see error logs about them in GNOME Logs.
 intel_pstate=active			//Worked for some reason.
 
 
-3. Contribute by sending hardware details	[Warning: Privacy will be compromised]
+3. Contribute by sending hardware details	[Warning: Privacy might be compromised]
 
 sudo hw-probe -all
 cd /root/HW_PROBE/LATEST/hw.info		//See what you are going to upload
@@ -52,7 +52,7 @@ journalctl -xe | fpaste				// send the link you get in community
 journalctl -x -b 0 > pranav.txt			// share/upload the file in community
 
 
-5. PAM module looking for "fingerprint" authentication even when there is so hardware capability.
+5. PAM module looking for "fingerprint" authentication even when there is no such hardware capability.
 
 sudo authselect disable-feature with-fingerprint	// this command will stop unneccessary logs from appearing about fingerprint
 
@@ -68,7 +68,7 @@ sudo CPATH=/usr/lib/gcc/x86_64-redhat-linux/12/include/ vmware-modconfig --conso
 
 sudo libinput debug-events --set-click-method=clickfinger
 
-[part from "clickfinger", there're other modes u can look into to indentify if the problem u are facing is hardware issue or software/fimrware issue.]
+[apart from "clickfinger", there're other modes u can look into to indentify if the problem u are facing is hardware issue or software/fimrware issue.]
 
 
 8.Track apps weird behaviour which is installed from Flatpak
