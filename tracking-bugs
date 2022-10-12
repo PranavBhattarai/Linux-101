@@ -1,5 +1,7 @@
 #Filter error log from normal logs
-journalctl -b -p 3			//b means last boot. p means priority. 3 means errors.
+journalctl -b -p 3			//b means last boot. p means prioritize. 3 means error. 2 means critical. and so on.
+journalctl -x -b 0 > log.txt		//For full logs
+journalctl -x -b -1 > log.txt		//For logs from last boot after a crash has happened.
 journalctl -b --unit=<unit-name>	//example: journalctl -b --unit=wpa_supplient
 journalctl -b -u <package-name>		//example: journalctl -u NetworkManager. Here "-u" represent unit name of a program
 journalctl -b -k			// -k to include dmseg log
