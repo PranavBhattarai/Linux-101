@@ -116,12 +116,17 @@ G ------>> move to end line of terminal content
 / ------>> search
 q ------>> quit
 
-
+==========================================================================================
 17. Force a user to create a new password
 
 passwd -e <username>		//here e flag will expire the existing password.
 
 [let say, the password of a user is leaked. Got to do something about it as an admin.]
+
+17.1 Change the password of current user
+
+passwd
+==========================================================================================
 
 18. Chmod the file | File Permissions
 
@@ -130,4 +135,25 @@ chmod u-x filename		// allows file to be executed by owner
 
 chown pragya filename		// change the owner of file to pragya
 chgrp ladies filename		// change the group of file to ladies
+
+=========================================================================
+
+19. SetUID on a file		// SetUID is used to allow a file to run as the owner of the file.
+
+sudo chmod u+s filename		// ? what is the point of doing this?
+
+[answer: Admin might want to allow its user to execute certain trusted file/program.]
+
+20. GetUID on a file		// GetUID is used to allow a file to run by a 'group of users'.
+
+sudo chmod 4755 filename
+
+[Let the user of particular group to be able to run the particular file/program.]
+
+21. Sticky bit on a file	
+
+sudo chmod +t filename		// 1755 can also be used instead of "+t".
+
+[Let anyone to modify the file. But only admin or owner, delete the file.]
+
 
