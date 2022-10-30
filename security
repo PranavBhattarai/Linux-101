@@ -30,4 +30,7 @@ OR,
 
 -------------------------------------------------------------------------------------------------------
 
-4. 
+4. Know which port are open. Close the port and identify suspicious program.
+
+netstat -tunlp			//to see all open port
+ps -o pid=<pid_number>		//to see parant id

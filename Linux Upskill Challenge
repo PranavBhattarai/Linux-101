@@ -157,3 +157,10 @@ sudo chmod +t filename		// 1755 can also be used instead of "+t".
 [Let anyone to modify the file. But only admin or owner, delete the file.]
 
 
+22. Give write access to the owner of the file
+
+chmod o+w filename
+
+[now user can read and also write on the file. But can't execute the file.]
+
+
