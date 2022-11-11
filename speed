@@ -117,11 +117,37 @@ find . -type d -empty -delete
 
 10. Don't use VMware (or VirtulBox). Rather use Virt-Manager which is free & support KVM.
 
-- Convert VMware's vmdk file into qcow2 file:
+# Download GNS3VM and extract the OVA file
 
-	qemu-img convert -f vmdk -O qcow2 path/to/file/foo.vmdk path/to/file/foo.qcow2
+	unzip GNS3.VM.VMware.Workstation*.zip
+	tar xvf "GNS3 VM.ova"
 
-[Qemu image which has "qcow2" file extension. qcow2 stands for "Qemu Copy On Write".]
+# Convert two vmdk image you see into qcow2 image:
+
+	qemu-img convert -f vmdk -O qcow2 disk1.vmdk /var/lib/libvirt/images/disk1.qcow2
+	qemu-img convert -f vmdk -O qcow2 disk2.vmdk /var/lib/libvirt/images/disk2.qcow2
+
+- Open VirtManager
+- Add New VM
+- Import existing disk image
+- Select disk1.qcow image
+- Choose the OS you are installing: Ubuntu 18.04	//at the moment, GNS3VM based upon Ubuntu 18.04.
+- Select: Customize configuration before install
+- Select: Add Hardware
+- Select: Storage -> Select or Create Custom Storage
+- Select: Select disk2.qcow image
+- Select: Finish  -> Begin Installation
+
+# Connect GNS3 with VirtManager's GNS3VM
+
+- copy ip address and port from GNS3VM
+- In GNS3, select:   Help  ->  Setup Wizard  -> Run application on remote server
+- paste ip address in Host.
+- paste port address in Port.
+- Select: Next -> Finish. 
+
+[Qemu image which has "qcow2" file extension. qcow stands for "Qemu Copy On Write". The 2 in end refers to its version.]
+[Downside: Virt-Manager needs to be manaully run. Unlike in VirtualBox & VMware which autoruns whenever GNS3 is opened.]
 
 `````````````````````````````````````````````````````````````````````````````````````````
 
