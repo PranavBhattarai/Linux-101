@@ -1,12 +1,12 @@
 #Understanding networking in smart way:
 
-1. If question/asker will give u only IP address but not the subnet mask, than we should look at "ip adderss class table"
-i.e :
-	Class A (0  -  127)
-	Class B (128 - 191)
-	Class C (192 - 223)
+1. Look at first octet of ip address to determine which class:
 
-But if question mention/give you subnet mask, we should ignore above table (i.e ip address class table), and use this logic:
+	0   - 127	==> Class A
+	128 - 191	==> Class B
+	192 - 223	==> Class C
+
+But if question mention/give you subnet mask, use this logic:
 
 	upto /8		below	 /16 ----> class A
 	upto /16	below	 /24 ----> class B
@@ -16,7 +16,7 @@ But if question mention/give you subnet mask, we should ignore above table (i.e 
 
 	1.2.3.4		/8	------>> if subnetted, we will get ip address starting from	1.X.X.X		to	1.255.255.255
 	1.2.3.4		/16	------>> if subnetted, we will get ip address starting from	1.2.X.X		to	1.2.255.255
-	1.2.3.4		/24	------>> if subnetted, we will get ip address starting from	1.2.3.X		to	1.2.3.255.255
+	1.2.3.4		/24	------>> if subnetted, we will get ip address starting from	1.2.3.X		to	1.2.3.255
 
 ===========================================================================================================================
 
