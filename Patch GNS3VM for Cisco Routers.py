@@ -32,3 +32,6 @@ print(" echo '127.0.0.127 xml.cisco.com' >> /etc/hosts\n")
 
 #THX for  @hirman74
 # hirman74  in line 10 and 18
+
+#If permission to run the file is requred: chmod +x script.py
+#If above command didn't worked, then try: wget http://www.ipvanquish.com/download/CiscoIOUKeygen3f.py
