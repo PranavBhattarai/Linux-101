@@ -1,3 +1,6 @@
+Step 0: Download Packet Tracer:
+	https://skillsforall.com/resources/lab-downloads
+
 Step 1: Navigate to where you downloaded the .deb file:
 
     mkdir ~/PacketTracer8.0.1
