@@ -291,3 +291,9 @@ git remote -v
 gnome-terminal -- fish
 
 #This can be used to create custom shortkey. like Super + W
+
+52. Scramble a file to make it unreadable
+
+shred <filename>
+
+53. 
