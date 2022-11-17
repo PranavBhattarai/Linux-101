@@ -16,8 +16,15 @@ window:
     columns: 70
     lines: 25
 
-4. For changing fish themes, from terminal:
-fish_config colors					//and select theme.I prefer Lava theme.
+4. Change fish behaviour:
+
+fish_config theme list					//I prefer Lava theme.
+fish_config theme choose <>
+fish_config theme save
+
+fish_config prompt list					//I prefer scalars.
+fish_config prompt choose <>
+fish_config prompt save
 
 5.Installed nuShell
 sudo dnf install nushell				//installed from third party
