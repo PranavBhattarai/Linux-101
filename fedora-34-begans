@@ -276,10 +276,12 @@ sudo rpm -e <package>			// Copy that exact package name and uninstall it
 
 49. Find pid and kill parent process
 
-pidof <>		example:->	pidof sudo
-killall -9 <>		example:->	killall -9 8526
+pidof <>			example:->	pidof sudo
+killall -9 <>			example:->	killall -9 8526
 
-#works fine with sudo installation which u abruptly stopped.
+pkill -f <process-name>		example:->	pkill -f firefox
+
+[pkill is the best way to kill process since we don't need to know the pid.]
 
 50. Get a repositry URL/link when u are in your local copy of source-code.
 
