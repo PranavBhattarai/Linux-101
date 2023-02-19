@@ -230,10 +230,10 @@ touch .gitignore				//Write file and foldernames in each line to ignore.
 
 43. Move back-n-forth between two directories
 
-nextd		//move to next directory
-prevd		//move to previous directory
+nextd		//move to next directory	[Alt + left-arrow]
+prevd		//move to previous directory	[Alt + right-arrow]
 
-[For this to work, you need to jump into some directory using "cd" command. Otherwise there is no place to jump.]
+[Is only works in Fish shell.]
 
 44. Install/Configure Firefox properly
 
@@ -281,6 +281,9 @@ killall -9 <>			example:->	killall -9 8526
 
 pkill -f <process-name>		example:->	pkill -f firefox
 
+Example:
+	pkill -x -HUP firefox	//  The best way to close the software with
+
 [pkill is the best way to kill process since we don't need to know the pid.]
 
 50. Get a repositry URL/link when u are in your local copy of source-code.
@@ -298,4 +301,22 @@ gnome-terminal -- fish
 
 shred <filename>
 
-53. 
+53. Set your home directory which you like for "Desktop-Icons-NG"
+
+nano ~/.config/user-dirs.dirs
+
+[modify "XDG_DESKTOP_DIR="$HOME/" line]
+
+54. Find what CPU architecture and other details
+
+lscpu
+
+[similar commands: 	uname-m		or	arch	]
+
+55. Create a bootable pendrive with single command.
+
+sudo dd if=./file.iso of=/mnt/pendrive status=progress
+
+[its optional to put "status" argument but is helpful to know how much it is progressing.]
+
+56.
