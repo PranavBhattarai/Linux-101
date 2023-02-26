@@ -319,4 +319,13 @@ sudo dd if=./file.iso of=/mnt/pendrive status=progress
 
 [its optional to put "status" argument but is helpful to know how much it is progressing.]
 
-56.
+56. Allow everyone to modify Memory card
+
+mkdir MemoryCard
+sudo fdisk -l						// to see where your memory card is mounted. Like sdb1, sdb2, etc.
+sudo umount /dev/sdb1					// unmount memory card first
+sudo mount -o rw,umask=000 /dev/sdb1 ~/MemoryCard/	// unmask=000 means everyone including groups & 'other user' can read & write
+
+[For security reasons, memory cards files are not executable or writeable by default]
+
+57.
