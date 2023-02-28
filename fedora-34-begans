@@ -325,7 +325,38 @@ mkdir MemoryCard
 sudo fdisk -l						// to see where your memory card is mounted. Like sdb1, sdb2, etc.
 sudo umount /dev/sdb1					// unmount memory card first
 sudo mount -o rw,umask=000 /dev/sdb1 ~/MemoryCard/	// unmask=000 means everyone including groups & 'other user' can read & write
+sudo unmount MemoryCard					// to eject the MemoryCard safely
 
 [For security reasons, memory cards files are not executable or writeable by default]
 
-57.
+57. Convert .m4a song to .mp3 for dummy phone
+
+ffmpeg -i song.m4a -acodec libmp3lame -aq 2 song.mp3		// "- aq 2" parameter is to denote 'good' audio quality
+
+58. Enable / Disable WiFi interface
+
+sudo ifconfig <interface> down				// for example: sudo ifconfig wlp3s0 down
+sudo ifconfig <interface> up				// to undo what we did above
+
+or,
+rfkill list
+rfkill block <>
+
+or,
+sudo ip config wlp3s0 down
+
+or,
+nmcli device set <interface-name> managed no		// Network Manager will not manage the interface
+
+or,
+sudo modprobe -r <wifi-dirver-module>			// for example: sudo modprobe -r iwlmvm
+
+[above mentioned modprobe command doesn't work in next reboot. Use "-b" instead of "-r" if you want to make it permanent]
+
+59. List out all driver using driverctl tool
+
+driverctl -v list-devices
+
+[note: we don't need 3rd tool just to see the list of drivers. The purpose of driverctl tool is much more than that I mentioned above.]
+
+60.
