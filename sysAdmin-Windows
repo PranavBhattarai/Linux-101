@@ -2,16 +2,59 @@
 
 - Disable "SysMain" from "Services"					// feature that push 3rd party services to run automatically
 - Enable "Performance mode" from "System Properties -> Advanced"	// might have to turn on "Adjust Clear Text" in some PC.
-- Purge "%temp%" directory						// shortkey:	Win + R
+- Delete "%temp%" directory files					// shortkey:	Win + R		and type  -->	%temp%
+- Delete "temp" directory files						// shortkey:	Win + R		and type  -->	temp
 - Disable unnecessary Startup Apps					// Task Manager -> Startup -> Select app & disable
+- Changee the power plan to either "Balanced" or "High".		// Balanced is usually default setting. So...
+- "cleanmgr" from "Run"	& select option from "Disk Clean-Up Utility"	// Select Cache, Recycle Bin, Temp files, Thumbnails, etc 
 
 [Note: Make sure Windows "Local Disk C" have at least 50 GB empty storage.]
 
 2. Enable Printer sharing between PCs + Enable Network Discovery
 
-- Open "Network sharing" ///
+[In Computer 1]
+	- Go to "Network and Sharing Center" 
+or,
+	- "Internet & Network setting"					// by clicking wifi or ethernet icon
+	- Select "Sharing Options"					// which is below "Change adapter Options"
+
+  Do this in Private profile:						// Its not good idea to share printer "Public" network profile
+	- Turn on Network Discovery	
+		enable ->  "Turn on automatic setup of network connected device"
+	- Turn on file and printer sharing
+- Turn off password protected sharing
+
+- Control Panel -> Hardware & Sound -> Devices and Printers -> Select a Printer ->  Select properties -> Sharing
+	- Click on "Share this printer"
+
+[In Computer 2]
+- File Manager -> Network -> Select Computer 1				// Right click on Network and hit Refresh if nothing appears
+- Right click on printer  -> Connect
 
 [Note: PCs need to be in same network in order to achieve this.]
+[Note: Change the network profile from "Public" to "Private". 		Setting > Network & Internet > Ethernet or Wifi > Private]
 
 
- 
+3. File/Folder sharing in same Network		(aka, Public Shared Folder ]	[aka, Network Drive]
+
+- Create or Select folder which you want to share
+- Right click on folder
+- Select Properties	->	Advance Sharing		->	Share this folder	->	Apply
+							->	Permission		->	Full Control	-> Apply
+							->	User			->	Everyone	-> Apply
+
+			->	Share			->	Everyone		->	Add
+							->	Everyone		->	Read/Write	-> Share.
+- Open File Manager
+- Select Network
+- You should see your Desktop name. Click on it.
+- You should see able to see your shared folder. 
+
+[If you don't see your Desktop name in Network section from FileManager, enable these 4 services.]
+
+- Services	->	SSDP Discovery		->	Startup Type	->	Automatic	[click, start if its not running.]
+		->	UPNP Device Host	->	Startup Type	->	Automatic	[click, start if its not running.]
+	-> Function Discovery Provider Host	     -> Startup Type	->	Automatic	[click, stop and start.]
+	-> Function Discovery Resource Publication   -> Startup Type	->	Automatic	
+
+4.
