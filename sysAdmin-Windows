@@ -1,0 +1,17 @@
+1. Ramp up the speed of Windows
+
+- Disable "SysMain" from "Services"					// feature that push 3rd party services to run automatically
+- Enable "Performance mode" from "System Properties -> Advanced"	// might have to turn on "Adjust Clear Text" in some PC.
+- Purge "%temp%" directory						// shortkey:	Win + R
+- Disable unnecessary Startup Apps					// Task Manager -> Startup -> Select app & disable
+
+[Note: Make sure Windows "Local Disk C" have at least 50 GB empty storage.]
+
+2. Enable Printer sharing between PCs + Enable Network Discovery
+
+- Open "Network sharing" ///
+
+[Note: PCs need to be in same network in order to achieve this.]
+
+
+ 

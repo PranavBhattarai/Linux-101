@@ -359,4 +359,19 @@ driverctl -v list-devices
 
 [note: we don't need 3rd tool just to see the list of drivers. The purpose of driverctl tool is much more than that I mentioned above.]
 
-60.
+60. A sexy tool = Cockpit 
+
+sudo dnf install cockpit
+systemctl enable --now cockpit.socket
+
+<ip-address>:9090			// To use Cockpit from any browser
+
+[This tool is used to manage your PC, containers, etc. Need to explore a lot about it. Looks amazing so far.]
+
+61. Security audit tool
+
+sudo lynis audit system -Q
+
+[Indepth security audit.]
+
+62.
