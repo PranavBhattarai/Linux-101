@@ -388,8 +388,8 @@ sudo lynis audit system -Q
 			
 	iv. Reboot & unplug the pendrive.
 
-[Note: In 3rd command, you might want to (re)install kernel because it is usually the main reason for OS not booting properly.]
-[Note: In 3rd command, you might also just run:		sudo dnf check-update 		or 	sudo dnf distro-sync	      ]
-
+[Note: In 3rd command, you might want to (re)install kernel because it is usually the main reason for OS not booting properly. 	]
+[Note: In 3rd command, you might also just run:		sudo dnf check-update 		or 	sudo dnf distro-sync	       	]
+[Note: In 1st command, you might have to mount "/boot" or "/boot/efi" partition if you have UEFI.				]
 
 63.
