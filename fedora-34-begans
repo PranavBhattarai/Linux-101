@@ -374,4 +374,21 @@ sudo lynis audit system -Q
 
 [Indepth security audit.]
 
-62.
+62. How to save any installed Linux distro if it doesn't boot?
+
+	i. Create a bootable pendrive with the same OS and version.		// For example: "Fedora 37"
+	ii. Boot live OS using pendrive
+	iii. Open terminal, run:
+	
+		sudo mount /dev/<your-drive-name> /mnt/				// make sure u are mounting correct drive. Use lsblk command to verify
+		sudo chroot							// you might need to add extra parameter in this
+		sudo <package-manager> install <package-which-broke-system>	// For exampele: "sudo dnf install kernel-core"
+		sudo unmount /mnt
+	
+	iv. Reboot & unplug the pendrive.
+
+[Note: In 3rd command, you might want to (re)install kernel because it is usually the main reason for OS not booting properly.]
+[Note: In 3rd command, you might also just run:		sudo dnf check-update 		or 	sudo dnf distro-sync	      ]
+
+
+63.
