@@ -383,8 +383,9 @@ sudo lynis audit system -Q
 		sudo mount /dev/<your-drive-name> /mnt/				// make sure u are mounting correct drive. Use lsblk command to verify
 		sudo chroot							// you might need to add extra parameter in this
 		sudo <package-manager> install <package-which-broke-system>	// For exampele: "sudo dnf install kernel-core"
+		exit
 		sudo unmount /mnt
-	
+			
 	iv. Reboot & unplug the pendrive.
 
 [Note: In 3rd command, you might want to (re)install kernel because it is usually the main reason for OS not booting properly.]
