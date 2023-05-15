@@ -57,4 +57,15 @@ or,
 	-> Function Discovery Provider Host	     -> Startup Type	->	Automatic	[click, stop and start.]
 	-> Function Discovery Resource Publication   -> Startup Type	->	Automatic	
 
-4.
+==============================================
+
+4. Reset Local Windows password if forgotten
+
+- Using bootable pendrive open "Command Prompt"
+- copy X:\Windows\System32\cmd.exe C:\Windows\System32\sethc.exe
+- Reboot
+- At login screen, press Shift 5 times					// Will open Command Prompt
+- net user <old/new-username> <new-password>				// Commmand to create new password
+- Voila. 
+
+5.

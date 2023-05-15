@@ -16,10 +16,11 @@ sudo dnf distro-sync
 sudo dnf system-upgrade download --releasever=pranav			//remove "pranav" & write new fedora version, u want to install
 sudo dnf system-upgrade reboot
 sudo dnf install rpmconf
-sudo dnf rpmconf -a
+sudo rpmconf -a
 sudo dnf install remove-retired-packages
 remove-retired-packages
 sudo dnf repoquery --unsatisfied					//list of packages with broken dependencies
+sudo dnf repoquery --duplicates
 sudo dnf autoremove
 sudo dnf remove $(dnf repoquery --extras)				//observe it and carefully remove packages which u don't need
 
@@ -392,4 +393,13 @@ sudo lynis audit system -Q
 [Note: In 3rd command, you might also just run:		sudo dnf check-update 		or 	sudo dnf distro-sync	       	]
 [Note: In 1st command, you might have to mount "/boot" or "/boot/efi" partition if you have UEFI.				]
 
-63.
+63. TestDisk Utility	- A SwissKnife to recover deleted files, folders, drive, etc.
+
+sudo testdisk		// if testdisk is not installed, install it with, "sudo dnf install testdisk"
+<select drive>
+<select partition>
+
+[Warning: Know what you are doing, what you are selecting, which drive you are on.]
+
+64.
+
