@@ -94,3 +94,14 @@ sudo libinput debug-events --set-click-method=clickfinger
 [This kernel parameter will automatically disapper in next boot.]
 
 
+9. Disable buggy touchscreen from its touch sensitivity
+
+ACTION=="add", KERNEL=="event5", \
+   ENV{ID_VENDOR_ID}=="04f3", \
+   ENV{ID_MODEL_ID}=="2012", \
+   ENV{LIBINPUT_IGNORE_DEVICE}="1"
+
+Read for more info: https://wayland.freedesktop.org/libinput/doc/latest/ignoring-devices.html
+
+
+10. 
