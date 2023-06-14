@@ -1,4 +1,4 @@
-#Understanding networking in smart way:
+curl ip.gs#Understanding networking in smart way:
 
 1. Look at first octet of ip address to determine which class:
 
@@ -32,4 +32,16 @@ subnetcalc <ip-address> <subnet-mask>
 
 ========================================================================================================
 
-3. 
+3. Find MAC address of device connected in same network
+
+sudo nmap -sn <IP>
+
+[Helpful to know whether the IP address given to particular device is working properly or not.]
+
+4. Know your public IP using curl
+
+curl ip.gs		//Awesome :-D
+
+[Works like charm. Simple trick.]
+
+5.
