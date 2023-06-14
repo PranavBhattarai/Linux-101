@@ -96,12 +96,18 @@ sudo libinput debug-events --set-click-method=clickfinger
 
 9. Disable buggy touchscreen from its touch sensitivity
 
-ACTION=="add", KERNEL=="event5", \
+/etc/udev/rules.d/		//Go to this directory
+sudo touch ELAN.rules		//Create your own rules, & write:
+
+ACTION=="remove", KERNEL=="event[0-9]*", \
    ENV{ID_VENDOR_ID}=="04f3", \
    ENV{ID_MODEL_ID}=="2012", \
    ENV{LIBINPUT_IGNORE_DEVICE}="1"
 
-Read for more info: https://wayland.freedesktop.org/libinput/doc/latest/ignoring-devices.html
+[ Read for more info: https://wayland.freedesktop.org/libinput/doc/latest/ignoring-devices.html ]
 
+#To verify whether above udev rule is working or not:
+
+udevadm test /sys/class/input/event5		//user might need to restart the PC
 
 10. 
