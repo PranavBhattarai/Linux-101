@@ -401,5 +401,10 @@ sudo testdisk		// if testdisk is not installed, install it with, "sudo dnf insta
 
 [Warning: Know what you are doing, what you are selecting, which drive you are on.]
 
-64.
+64. To see whether which display protocol, user is currently using:
 
+env | grep XDG_SESSION_TYPE
+
+[The output is either Wayland, or X11. Prefer Wayland if your display supports it.]
+
+65.
