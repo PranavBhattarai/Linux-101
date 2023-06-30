@@ -138,6 +138,9 @@ find . -type d -empty -delete
 - Select: Select disk2.qcow image
 - Select: Finish  -> Begin Installation
 
+11. Know your location temprature.
+
+curl wttr.in/<location>			Ex:	curl wttr.in/ramgram
 # Connect GNS3 with VirtManager's GNS3VM
 
 - copy ip address and port from GNS3VM
