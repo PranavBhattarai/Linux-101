@@ -32,7 +32,7 @@ or,
 - Right click on printer  -> Connect
 
 [Note: PCs need to be in same network in order to achieve this.]
-[Note: Change the network profile from "Public" to "Private". 		Setting > Network & Internet > Ethernet or Wifi > Private]
+[Note: Change the network profile from "Public" to "Private". 	       Setting > Network & Internet > Ethernet or Wifi > Private    ]
 
 
 3. File/Folder sharing in same Network		(aka, Public Shared Folder ]	[aka, Network Drive]
@@ -65,7 +65,26 @@ or,
 - copy X:\Windows\System32\cmd.exe C:\Windows\System32\sethc.exe
 - Reboot
 - At login screen, press Shift 5 times					// Will open Command Prompt
-- net user <old/new-username> <new-password>				// Commmand to create new password
+- net user <old/new-username> <new-password>				// Commmand to create new password for given username
 - Voila. 
 
-5.
+[Tested on Windows 10, it worked.]
+
+====================================================
+
+5. Backup Chrome extension, because you never know what your Boss says
+
+- Go to extension setting.
+- Enable Developer Option.
+- Select "Pack Extension" option.
+- In "Extension Root Directory", select the folder where is extension exist.	// Use "extension ID" to track, using "locate" cmd.
+- The end.
+
+To load/install extension locally:
+- Select "extension-name/version.crx" file and right-click to open it in chrome.
+
+....> need to verify
+
+[Sometimes we need to backup EVERYTHING.]
+
+6.
