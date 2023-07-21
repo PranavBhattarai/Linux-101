@@ -87,4 +87,10 @@ To load/install extension locally:
 
 [Sometimes we need to backup EVERYTHING.]
 
-6.
+6. Restart a service using terminal
+
+restart-service -name <>				// E.g.:	restart-service -name firefox
+
+[Works in Powershell. Not in "Command Prompt".]
+
+7.
