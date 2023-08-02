@@ -20,13 +20,15 @@ To remove OS from Windows boot configuration:
 
 3. What is EFI & ESP?
 
-- EFI	= UEFI store all information in .efi file; which is kept in special disk called "ESP".
-- ESP	= EFI System Partition
+- EFI = UEFI store all information in .efi file; which is kept in special disk called "ESP".
 
+[ ESP = EFI System Partition ]
 
 4. What is UEFI with CSMP (hybrid) VS UEFI without CSMP (native)?			// First observed in HP laptop
 
 - UEFI with CSMP	----->>		support both BIOS & UEFI boot process.
 - UEFI without CSMP	----->>		support only UEFI boot process.			// doesn't support traditional/old BIOS boot
+
+[ CSMP = Compatibility Support Module ]
 
 5.
