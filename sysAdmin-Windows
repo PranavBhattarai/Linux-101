@@ -93,4 +93,22 @@ restart-service -name <>				// E.g.:	restart-service -name firefox
 
 [Works in Powershell. Not in "Command Prompt".]
 
-7.
+7. Try to fix Windows 10 network issue, when its "connect to WiFi but with no internet"
+
+netsh winsock reset	---->
+netsh int ip reset	---->
+ipconfig /release	---->
+ipconfig /renew		--->
+
+[]
+
+8. Give Admin access to a user
+
+	 net localgroup administrators <user-name> /add
+example: net localgroup administrators Ashish /add
+
+[Don't give admin access to everyone. For security reason.]
+
+9. 
+
+8.
