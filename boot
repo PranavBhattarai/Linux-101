@@ -15,7 +15,7 @@ To remove OS from Windows boot configuration:
 - UEFI is best in comparision with Legacy boot (BIOS).		// Both are : Boot process
 
 [ BIOS	=  Basic Input & Output System	(Legary boot process)	]
-[ In short:	GPT > MBR	&	UEFI > BIOS 		]
+[ which better choice:	GPT > MBR	&	UEFI > BIOS 	]
 [ UEFI mainly support GPT.					]
 
 3. What is EFI & ESP?
@@ -31,4 +31,15 @@ To remove OS from Windows boot configuration:
 
 [ CSMP = Compatibility Support Module ]
 
-5.
+5. Is there a dual boot in a Laptop/Desktop? If yes then,
+
+- Disable Windows fastboot			// helps to properly dismount the volumes/drives on shutdown
+
+  - Control Panel
+	 -> 'Change what Power button do' 
+		-> 'Change settings currently unavailable'	
+			-> uncheck 'Fast Startup'
+
+[At which point the Linux drivers & fsck can deal with the drives just fine.]
+
+6.
