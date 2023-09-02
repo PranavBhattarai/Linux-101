@@ -23,6 +23,7 @@ usermod -aG wheel pragya	// In fedora, "wheel" is the default group where admins
 
 sudo deluser pragya sudo	// Remove the user (pragya) from admin groups
 sudo userdel pragya		// Delete the user (pragya)
+sudo userdel -r pragya		// Wipes files and foler. Basically everything
 
 ``````````````````````````````````````````````````````````````````````````
 2. How can two user copy their files?
