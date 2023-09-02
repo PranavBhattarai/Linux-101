@@ -1,4 +1,5 @@
-curl ip.gs#Understanding networking in smart way:
+#Understanding networking in smart way:
+[Warnings: At the moment this particular note sucks at many level. Don't rely infromation on this note.]
 
 1. Look at first octet of ip address to determine which class:
 
@@ -44,4 +45,11 @@ curl ip.gs		//Awesome :-D
 
 [Works like charm. Simple trick.]
 
-5.
+5. Ping tricks
+
+ping 10.1	-->>	ping 10.0.0.1
+ping 192.168.1	-->>	ping 192.168.0.1
+
+[Works in Windows, haven't been tested in Linux.]
+
+6.
