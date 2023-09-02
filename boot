@@ -1,4 +1,4 @@
-#This includes all infortant information regarding BIOS, GPT, MBR, Legacy devices, UEFI, EFI, etc. So admin can install OS peacefully
+#This includes all important information regarding BIOS, GPT, MBR, Legacy devices, UEFI, EFI, etc. So admin can install OS peacefully
 
 1. How to delete unwanted boot records form Windows?
 
