@@ -34,3 +34,9 @@ OR,
 
 netstat -tunlp			//to see all open port
 ps -o pid=<pid_number>		//to see parant id
+
+--------------------------------------------------------------------------------------------------------
+
+5. List out all running process in Tree formaat. Easier to spot unusally activity:
+
+ps -auxwf
