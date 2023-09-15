@@ -109,6 +109,14 @@ example: net localgroup administrators Ashish /add
 
 [Don't give admin access to everyone. For security reason.]
 
-9. 
+9. Show password, wifi names from terminal
+
+netsh wlan show profile					// list all WiFi names
+netsh wlan show profile = "wifi-name" key = clear	// select wifi name and show its password
+netsh wlan show profile = "wifi-name" | findstr Key	// show the password only of selected wifi name
+
+[ Quotation mark for WiFi name is Optional.]
+
+10.
 
 8.
