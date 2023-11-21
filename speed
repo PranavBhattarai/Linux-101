@@ -76,6 +76,7 @@ curl cht.sh/<langauge>/:<term>		//Example: cht.sh/rust/:self		~ will tell everyt
 ==================================================================================================================================
 
 7. Dig commands scenario
+
 dig <> <>				//DNS Utility look. 
 dig +short google.com			//gives google public ip address
 dig <> @dns.toys			//A DNS Utility tool made by someone and named it "dns.toys"	//this has many useful tricks
@@ -151,6 +152,10 @@ curl wttr.in/<location>			Ex:	curl wttr.in/ramgram
 
 [Qemu image which has "qcow2" file extension. qcow stands for "Qemu Copy On Write". The 2 in end refers to its version.]
 [Downside: Virt-Manager needs to be manaully run. Unlike in VirtualBox & VMware which autoruns whenever GNS3 is opened.]
+
+# [New information] Convert any iso into qcow2 image:
+
+qemu-img convert xxx.iso xxx.qcow2			// xxx is just the random name given to as a reference
 
 `````````````````````````````````````````````````````````````````````````````````````````
 
