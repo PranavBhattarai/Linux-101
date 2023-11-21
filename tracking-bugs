@@ -99,7 +99,7 @@ sudo libinput debug-events --set-click-method=clickfinger
 /etc/udev/rules.d/		//Go to this directory
 sudo touch ELAN.rules		//Create your own rules, & write:
 
-ACTION=="remove", KERNEL=="event[0-9]*", \
+ACTION!="remove", KERNEL=="event[0-9]*", \
    ENV{ID_VENDOR_ID}=="04f3", \
    ENV{ID_MODEL_ID}=="2012", \
    ENV{LIBINPUT_IGNORE_DEVICE}="1"
@@ -111,3 +111,4 @@ ACTION=="remove", KERNEL=="event[0-9]*", \
 udevadm test /sys/class/input/event5		//user might need to restart the PC
 
 10. 
+
