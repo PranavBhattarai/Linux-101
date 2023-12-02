@@ -151,5 +151,17 @@ telnet <URL> or <IP>
 
 [Simple Trick]
 
-13.
 
+13. Fix a font issue in Windows Word where Windows ignore Nepali symbols  ु ू 
+
+MS Word ->  Settings    -> Proofing	-> Auto-correct Options	   -> Autoformat As You Type  -> Uncheck "Straight quotes"
+
+[verify if there are other issues, related to "proofing".]
+
+14. Shutdown Windows using shortkey
+
+Alt + F4
+
+[A dialog box appear where you can select Restart or Shutdown]
+
+15.
