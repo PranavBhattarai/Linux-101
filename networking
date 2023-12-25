@@ -36,6 +36,8 @@ subnetcalc <ip-address> <subnet-mask>
 3. Find MAC address of device connected in same network
 
 sudo nmap -sn <IP>
+or
+sudo nmap -sn <IP>/CIDR
 
 [Helpful to know whether the IP address given to particular device is working properly or not.]
 
@@ -52,4 +54,8 @@ ping 192.168.1	-->>	ping 192.168.0.1
 
 [Works in Windows, haven't been tested in Linux.]
 
-6.
+6. Fastest scanner, as they say:
+
+masscan
+
+[cool tool. Learn more about it.]

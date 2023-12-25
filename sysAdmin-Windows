@@ -164,4 +164,8 @@ Alt + F4
 
 [A dialog box appear where you can select Restart or Shutdown]
 
-15.
+15. Activate Windwos & Office package for test in Virtual Environment.
+
+ irm https:// massgrave . dev / get | iex	//remove space
+
+[For testing purpose only]
