@@ -105,7 +105,9 @@ netsh int ip reset	---->
 ipconfig /release	---->
 ipconfig /renew		--->
 
-[]
+[For PowerShell users]
+Get-NetIPAddress	// similar to "ipconfig", but much cleaner
+
 
 8. Give Admin access to a user
 
