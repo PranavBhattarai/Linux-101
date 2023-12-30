@@ -169,3 +169,13 @@ Alt + F4
  irm https:// massgrave . dev / get | iex	//remove space
 
 [For testing purpose only]
+
+16. Create an invisible folder in Windows		[ Trick ]
+
+- create a folder named "con" & press Alt + 255		//  like: "con alt+255"
+- change the folder icon to invisible icon
+
+[con is one of the restricted word which users can't use to create the folder in Windows.]
+[Also: Folder is selected, and is visible when the move the mouse over to it. So its not "truely invisible".]
+
+17. 
