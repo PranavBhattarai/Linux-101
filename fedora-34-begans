@@ -285,6 +285,9 @@ pkill -f <process-name>		example:->	pkill -f firefox
 Example:
 	pkill -x -HUP firefox	//  The best way to close the software with
 
+Trick:
+	kill -9 $(pgrep firefox)
+
 [pkill is the best way to kill process since we don't need to know the pid.]
 
 50. Get a repositry URL/link when u are in your local copy of source-code.
