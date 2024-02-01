@@ -103,7 +103,7 @@ or,
 	net user pranav #007#007 /add /logonpasswordchg:yes	// Create a new user with temporary password which need to change later
 
 [here, #007#007 is a temporary password. And pranav is the username of the user.]
-`````````````````````````````````````````````````````````````````
+`````````````````````````````````````````````````````````````````````````````````
 
 14. Delete the user profile in Windows
 
