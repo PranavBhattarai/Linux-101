@@ -49,7 +49,7 @@ or,
 							->	User			->	Everyone	-> Apply
 
 			->	Share			->	Everyone		->	Add
-							->	Everyone		->	Read/Write	-> Share.
+							->	Everyone		->	Read/Write	-> Share
 - Open File Manager
 - Select Network
 - You should see your Desktop name. Click on it.
@@ -151,10 +151,16 @@ telnet <URL> or <IP>
 - Hold shift key
 - Select "Restart" option from Lock Screen.
 
-[Simple Trick]
+[There are other ways to trigger ASR if login screen doesn't show up.]
 
+12. Install packages/software through Terminal/CMD
 
-13. Fix a font issue in Windows Word where Windows ignore Nepali symbols  ु ू 
+- winget install <vlc>
+- choco install <vlc>
+
+[ Pre-configutation/Setup might be required to use "choco".]
+
+13. Fix a font issue in MS Word where MS Office ignore Nepali symbols  ु ू 
 
 MS Word ->  Settings    -> Proofing	-> Auto-correct Options	   -> Autoformat As You Type  -> Uncheck "Straight quotes"
 
