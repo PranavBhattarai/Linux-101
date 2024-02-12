@@ -124,27 +124,20 @@ netsh wlan show profile = "wifi-name" | findstr Key	// show the password only of
 
 [ Quotation mark for WiFi name is Optional.]
 
-10. Some Windows Command Line Tools		// PowerCert Videos
+10. Troubleshoot boot issues
 
-tracet <URL> or <IP>				// In linux: traceroute
-pathping <URL> or <IP>				// In Linux: mtr
-ipconfig /all
+ Part I:
+	chkdsk /r						// r = repair
+	DISM /Online /Cleanup-Image /ScanHealth			// DISM = Deployment Image Servicing and Management 
+	DISM /Online /Cleanup-Image /RestoreHealth
+	sfc /scannow						// SFC = System File Checker
 
-[System File Checker				aka, sfc ]
-sfc /scannow						     // Repair corrupt files
+ Part II:
+	bootrec /FixMbr 
+	bootrec /FixBoot 
+	bootrec /RebuildBcd
 
-[Deployment Image Servcing & Management		aka, dism ]
-dism /online /cleanup-image /restorehealth		     // Repairs the system image
-or,
-DISM.exe /Online /Cleanup-image /scanhealth
-sfc /scannow						     // To check if dism worked. 
-
-[Telnet						// Warning: Telnet uses unencrypted communication. ]
-- Enable "telnet client" in Windows		// Control Panel > All programs > Turn on Windows features on and off.
-
-telnet <URL> or <IP>
-
-[Use Telnet inside private network. Its not safe.]
+[ To use DISM command is used with "/Online" parameter, you need internet connection.]
 
 11. Launch the "Advance Startup Repair" 
 
