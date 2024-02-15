@@ -165,11 +165,11 @@ Alt + F4
 
 [A dialog box appear where you can select Restart or Shutdown]
 
-15. Activate Windwos & Office package for test in Virtual Environment.
+15. Activate Windows & Office package for testing:
 
  irm https:// massgrave . dev / get | iex	//remove space
 
-[For testing purpose only]
+[Use PowerShell or Terminal, not CMD.]
 
 16. Create an invisible folder in Windows		[ Trick ]
 
