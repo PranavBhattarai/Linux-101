@@ -59,3 +59,16 @@ ping 192.168.1	-->>	ping 192.168.0.1
 masscan
 
 [cool tool. Learn more about it.]
+
+7. Transfer file from 1 computer to another:
+
+From source device:
+			cat <file> | netcat <ip> <port> -q 0		Ex: cat config.file | netcat 192.168.1.2 1234 -q 0
+
+From reciever device:
+			netcat -l <port> > <file>			Ex: netcat -l 1234 > config.file
+
+[ "-q 0" closes the connection when file transfer is complete.]
+[ netcat = nc ]
+
+8.
