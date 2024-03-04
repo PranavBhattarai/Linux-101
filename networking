@@ -71,4 +71,9 @@ From reciever device:
 [ "-q 0" closes the connection when file transfer is complete.]
 [ netcat = nc ]
 
-8.
+8. Connecting switch using console cable (USB-To-Serial Cable)
+
+Change serial line to: /dev/ttyUSB0
+
+[ "ls -l  /dev/ttyUSB*" to verify whether USB connection is detected or not.]
+[ User might have to run "putty" on sudo. :-C]
