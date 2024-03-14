@@ -133,6 +133,7 @@ netsh wlan show profile = "wifi-name" | findstr Key	// show the password only of
 	sfc /scannow						// SFC = System File Checker
 
  Part II:
+	bootrec /ScanOS
 	bootrec /FixMbr 
 	bootrec /FixBoot 
 	bootrec /RebuildBcd
@@ -179,4 +180,11 @@ Alt + F4
 [con is one of the restricted word which users can't use to create the folder in Windows.]
 [Also: Folder is selected, and is visible when the move the mouse over to it. So its not "truely invisible".]
 
-17. 
+17. Force Windows to open "Recovery Environment" to solve Boot issues:
+
+- Power On the laptop. 
+- Before Windows attempts to load (spinning dots):
+	- Press Power buttom for 5-10 sec for Hard Shutdown
+- Do this twice
+- In 3rd time, Windows will open "Recovery Environment"
+
