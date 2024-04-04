@@ -222,4 +222,15 @@ or
 
 [first method is more cool]
 
-23.
+23. Get information about running service using "Get-Service"
+
+Get-Service wuauserv			//show windows update service
+Get-Service usauserv | Format-List *	//see in more detailed way
+
+Stop-Service wuauserv			//Stop running service
+Start-Service wsauserv
+
+[Run "Get-Service" to see all services that are running or stopped.]
+[Also there is a GUI system app named "Services" that do same thing.]
+
+24.
