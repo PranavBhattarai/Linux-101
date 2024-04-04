@@ -152,7 +152,7 @@ netsh wlan show profile = "wifi-name" | findstr Key	// show the password only of
 - winget install <vlc>
 - choco install <vlc>
 
-[ Pre-configutation/Setup might be required to use "choco".]
+[ One must configure "choco" in order to use.]
 
 13. Fix a font issue in MS Word where MS Office ignore Nepali symbols  ु ू 
 
@@ -188,3 +188,38 @@ Alt + F4
 - Do this twice
 - In 3rd time, Windows will open "Recovery Environment"
 
+18. Get all Windows user info
+
+get-localuser
+
+19. Create a new user in Windows
+
+	net user pranav * /add
+or,
+	net user pranav #007#007 /add /logonpasswordchg:yes	// create a new user with temporary password which need to change later
+
+["pranav" is username and "#007#007" is the password.]
+
+20. Delete the user profile in Windows
+
+	net user pranav /del		// will delete Windows user named "pranav"
+or
+	remove-localuser pranav
+
+[Note: If you want GUI to create and manage user, than go to Computer Management -> Local User and Groups -> Users ]
+
+21. Force/Let Windows user to change their password when they log on:
+
+net user pranav /logonpasswordchg:yes		//Privacy. Admin shouldn't know his emplyooees passwords.
+
+[helpfull for new employee to create his own user password after setting up his/her PC]
+
+22. Create a password for Windows user
+
+	net user pranav *				//3rd person won't be above to see what you have typed
+or	
+	net user pranav 'write-password-here'		//3rd person can be able to see what you have typed
+
+[first method is more cool]
+
+23.
