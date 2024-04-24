@@ -233,4 +233,13 @@ Start-Service wsauserv
 [Run "Get-Service" to see all services that are running or stopped.]
 [Also there is a GUI system app named "Services" that do same thing.]
 
-24.
+24. How to check for disk corruption?
+
+	wmic
+	diskdrive get status		// if output is ok, then it should be fine. Else:
+	exit
+	chkdisk						
+
+[We can also use SFC command ask mentioned above]
+
+25.
