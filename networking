@@ -80,3 +80,33 @@ Step 2:
 	Configure speeed	// Usually: 115200
 
 [ Example: if output is "/dev/ttyUSB0", then copy the path and write that in Putty's Serial Line input box.]
+
+9. Update switch image using weak/cautious TFTP protocol.	// Tested in Fedora 40
+
+#Step 1 : Install tftp packages
+	sudo dnf install tftd-server
+	sudo dnf install tftp
+
+#Step 2 : Enable service
+	sudo systemctl enable --now tftp
+	sudo systemctl daemon-reload		// Optional
+
+#Step 3 : Allow tftp protocol from Firewall
+	sudo firewall-cmd --add-service=tftp
+
+#Step 4 : Put image in particular location
+	mv switch-Img.tar.gz /var/lib/tftpboot
+
+#Step 5 : Allow permission to folder
+	chmod 777 /var/lib/tftpboot		// Optional
+
+#Step 4 : Download zipped image in Client (Switch) from Server (Computer)
+	download agent tftp://<server-ip>/filename				// Tested in cnMatrix switch
+	boot									// Type : "y" to boot
+
+#Step 5 : After successful transfer, close remove tftp from Firewall
+	sudo firewall-cmd --remove-service=tftp
+
+[Sometimes, downloading the image online doesn't work. Sometimes, using USB to install image doesn't work. Hence, TFTP.]
+
+10. 
