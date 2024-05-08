@@ -86,4 +86,20 @@ sudo date -s "<year>-<month>-<day> hour:min:sec"	ex: sudo date -s 2023-04-02 01:
 
 [ you can use "timedatectl" command to see local time, Universal time, time zone, etc.]
 
-11.
+11. See harddisk health / status using smartctl
+
+sudo smartctl -i /dev/sda		// to see if harddisk has SMART capability
+sudo smartctl -d ata -H /dev/sda	// to run overall health ckeckup
+
+[learn more... : sudo smartctl -x /dev/sda ]
+
+12. Add or Remove services from Firewall policy
+
+sudo firewall-cmd -add-service=<service_name>
+sudo firewall-cmd reload
+sudo firewall-cmd -remove-service=<service_name>
+sudo firewall-cmd --reload
+
+[Learned something while trying to enable "tftp" service.]
+
+13.
