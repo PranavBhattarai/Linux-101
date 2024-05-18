@@ -242,4 +242,26 @@ Start-Service wsauserv
 
 [We can also use SFC command ask mentioned above]
 
-25.
+25. See bootable pendrive state in Live Windows Troubleshooting mode	// shift + Restart --> Advance Troubleshooting
+
+	list disk
+	sel disk
+	detail disk
+
+[Normally "boot disk" category need to be "yes" in order for pendrive to work (i.e. for installing Windows 10)]
+
+26. Turn off MS Word/PPT preview:
+
+General -> Uncheck "Enable Live Preview"
+or
+Enable -> Always show icons, never thumbnails		// Open File Explorer Options
+
+[Affected in Windows 10. ]
+
+27. How to check Memory (RAM) related issue in Windows 10?
+
+- Launch "Windows Memory Diagnostic Tool"		// Also check "system summary" from Event Viewer.
+
+[There are other tool like: memtest. We can also use BIOS setting to run diagnotic.]
+
+28.
