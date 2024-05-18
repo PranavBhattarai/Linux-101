@@ -13,7 +13,7 @@ This is <b><i>just</i></b> a backup if incase it gets lost.
 - [Reddit](https://www.reddit.com/user/Arunzeb)
 - [FedoraProject](https://ask.fedoraproject.org/u/bond)
 
-### Some Opensource projects where I involve:
+### Give insight on some Opensource projects which I like:
 
 - [Just Perfection](https://gitlab.gnome.org/jrahmatzadeh/just-perfection/-/issues?scope=all&state=all&author_username=Pranav)
 - [Firefox](https://bugzilla.mozilla.org/buglist.cgi?query_format=advanced&emailtype1=exact&emailreporter1=1&email1=Prabesh432%40gmail.com&list_id=15840362)
