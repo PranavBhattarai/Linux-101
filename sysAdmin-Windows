@@ -75,6 +75,11 @@ or,
 
 [Tested on Windows 10, it worked.]
 
+or,
+	If two user are in same computer, then admin user can change the password:
+
+- net user <username> *
+
 ====================================================
 
 5. Backup Chrome extension, because you never know what your Boss says
