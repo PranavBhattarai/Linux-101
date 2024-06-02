@@ -269,4 +269,13 @@ Enable -> Always show icons, never thumbnails		// Open File Explorer Options
 
 [There are other tool like: memtest. We can also use BIOS setting to run diagnotic.]
 
-28.
+28. Stop printer queue in Windows 10
+
+- Delete all files from:
+	C:\Windows\System32\spool\PRINTERS
+
+- Go to "Services"	->	 Stop "Printer Spooler".
+
+[Restart the "printer spooler" again later when things are back to normal.]
+
+29.
