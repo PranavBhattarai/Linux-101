@@ -74,7 +74,7 @@ From reciever device:
 8. Configure Putty for Console Cable to connect Switch:
 
 Step 1:
-ls /dev/ttyUSB*			// Write the output on Putty > Serial Line
+ls /dev/ttyUSB*			// Write the path in "Serial Line" option in Putty
 
 Step 2:
 	Configure speeed	// Usually: 115200
