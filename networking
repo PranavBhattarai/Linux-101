@@ -107,6 +107,6 @@ Step 2:
 #Step 5 : After successful transfer, remove tftp from Firewall
 	sudo firewall-cmd --remove-service=tftp		// Optional, but important since tftp can be misused
 
-[Sometimes, downloading the image online doesn't work. Sometimes, using USB to install image doesn't work. Hence, TFTP.]
+[Still blocked? Then try "sudo setenforce 1" to temporarily disable SELinux and renable using "sudo setenforce 0"]
 
 10. 
