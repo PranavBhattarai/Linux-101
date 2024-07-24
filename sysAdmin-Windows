@@ -278,4 +278,14 @@ Enable -> Always show icons, never thumbnails		// Open File Explorer Options
 
 [Restart the "printer spooler" again later when things are back to normal.]
 
-29.
+29. Remove Copilot bloatware in Windows 10/11
+
+	- Run PowerShell as Administrator
+	- Paste:	
+		Get-AppxPackage *CoPilot* -AllUsers | Remove-AppPackage -AllUsers
+	- Press Enter (There will not be any output if it is successfully removed)
+	- Reboot
+
+[Remove it: For privacy reason. And to save RAM since it run most of the time on background.]
+
+30.
