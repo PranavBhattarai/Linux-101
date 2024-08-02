@@ -37,6 +37,18 @@ ps -o pid=<pid_number>		//to see parant id
 
 --------------------------------------------------------------------------------------------------------
 
-5. List out all running process in Tree formaat. Easier to spot unusally activity:
+5. List out all running process in Tree format. Easier to spot unusally activity:
 
 ps -auxwf
+
+----------------------------------------------------------------------------------------------------
+
+6. After Crowdsrike incident, this can happen too to any Linux distro, so:
+
+https://systemd.io/AUTOMATIC_BOOT_ASSESSMENT/		// Works in Linux distro only.
+
+[Automatic Boot Assessment (ABA) counts the failed attempts of boot; and revert back to old kernel/system.]
+
+-----------------------------------------------------------------------------------------------------------
+
+7.
