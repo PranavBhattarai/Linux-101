@@ -139,10 +139,15 @@ find . -type d -empty -delete
 - Select: Select disk2.qcow image
 - Select: Finish  -> Begin Installation
 
+[The difference to run qcow image and iso image is huge; since it support KVM which VirtManager supports.]
+
 11. Know your location temprature.
 
 curl wttr.in/<location>			Ex:	curl wttr.in/ramgram
-# Connect GNS3 with VirtManager's GNS3VM
+
+[Zoom out to adjust the view of output which is written in Table.]
+
+12. Connect GNS3 with VirtManager's GNS3VM
 
 - copy ip address and port from GNS3VM
 - In GNS3, select:   Help  ->  Setup Wizard  -> Run application on remote server
@@ -157,6 +162,15 @@ curl wttr.in/<location>			Ex:	curl wttr.in/ramgram
 
 qemu-img convert xxx.iso xxx.qcow2			// xxx is just the random name given to as a reference
 
-`````````````````````````````````````````````````````````````````````````````````````````
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
-11. 
+13. A simple way to debload Windows installation, is by selecting Language!
+
+- While Installing Windows ISO from pendrive, select:
+
+	Time and currency format:	English (World)			// Worked in Windows 11 installation
+
+[Simply selecting that language option will all pre-installed apps like TikTok, Instagram, etc.]
+[Note: This also disable "Microsoft Store"; which can be re-enabled later if you want.]
+
+----------------------------------------------------------------------------------------------------------------
