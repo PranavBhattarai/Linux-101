@@ -171,6 +171,5 @@ qemu-img convert xxx.iso xxx.qcow2			// xxx is just the random name given to as 
 	Time and currency format:	English (World)			// Worked in Windows 11 installation
 
 [Simply selecting that language option will all pre-installed apps like TikTok, Instagram, etc.]
-[Note: This also disable "Microsoft Store"; which can be re-enabled later if you want.]
 
 ----------------------------------------------------------------------------------------------------------------
