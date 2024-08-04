@@ -288,4 +288,10 @@ Enable -> Always show icons, never thumbnails		// Open File Explorer Options
 
 [Remove it: For privacy reason. And to save RAM since it run most of the time on background.]
 
-30.
+30. Debloat Windows completly.
+
+- Run Powershell or Terminal with Adminstrative privileges
+
+	irm "https://christitus.com/win" | iex
+
+[Give you option to remove: Copilot, MS Edge, etc. Also give you install option for software like: Firefox, PDF reader.]
