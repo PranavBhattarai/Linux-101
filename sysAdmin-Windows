@@ -173,7 +173,7 @@ Alt + F4
 
 15. Activate Windows & Office package for testing:
 
- irm https:// massgrave . dev / get | iex	//remove space
+ irm https:// get . activated . win | iex	//remove space
 
 [Use PowerShell or Terminal, not CMD.]
 

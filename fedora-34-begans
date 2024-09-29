@@ -319,9 +319,9 @@ lscpu
 
 55. Create a bootable pendrive with single command.
 
-sudo dd if=./file.iso of=/mnt/pendrive status=progress
+sudo dd if=./file.iso of=/mnt/pendrive status=progress bs=4M
 
-[its optional to put "status" argument but is helpful to know how much it is progressing.]
+["status" and "bs" parameter is optional. bs value depend upon pendrive read/write speed AFAIK.]
 
 56. Allow everyone to modify Memory card
 
