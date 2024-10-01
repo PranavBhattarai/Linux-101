@@ -51,4 +51,28 @@ https://systemd.io/AUTOMATIC_BOOT_ASSESSMENT/		// Works in Linux distro only.
 
 -----------------------------------------------------------------------------------------------------------
 
-7.
+7. Block known malicious IP, by putting its traffic into null routes
+
+ ~ To apply:
+
+	route add <bad-ip> gw 127.0.0.1 lo		// routing the traffic coming from bad ip into loopback address
+or
+	route add -host <bad-ip> reject
+or
+	ip route add blackhole <ip>/cidr		// BEST command. No ICMP will be sent. No packet will be forwarded.
+
+ ~ To verify:
+	
+	ip route get <bad-ip>				// Output: "RTNETLINK answers: Network is unreachable"
+
+ ~ To block entire subnet:
+	
+	route add -net <network-ID/cidr> gw 127.0.0.1 lo
+
+ ~ To undo blocking:
+	
+	route delete <ip>
+	route delete -host <ip> reject
+	ip route delete <ip>/cidr dev eth0
+
+[For advance blocking, use bash script. For persistent blocking, add commands to /etc/rc.local file. Learn, "fail2ban".]
