@@ -15,9 +15,11 @@ But if question mention/give you subnet mask, use this logic:
 
 1.1 Effect of cidr on calculation of ip address:
 
-	1.2.3.4		/8	------>> if subnetted, we will get ip address starting from	1.X.X.X		to	1.255.255.255
-	1.2.3.4		/16	------>> if subnetted, we will get ip address starting from	1.2.X.X		to	1.2.255.255
-	1.2.3.4		/24	------>> if subnetted, we will get ip address starting from	1.2.3.X		to	1.2.3.255
+	1.2.3.4		/8	------>> if subnetted, we get ip address from	1.0.0.0		to	1.255.255.255
+	1.2.3.4		/16	------>> if subnetted, we get ip address from	1.2.0.0		to	1.2.255.255
+	1.2.3.4		/24	------>> if subnetted, we get ip address from	1.2.3.0		to	1.2.3.255
+
+[Note: CIDR denotes how many bits are reserved for the network (aka, network bits). The remaining bits can be used for host (aka, host bits).]
 
 ===========================================================================================================================
 
