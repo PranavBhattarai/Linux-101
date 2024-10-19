@@ -295,3 +295,13 @@ Enable -> Always show icons, never thumbnails		// Open File Explorer Options
 	irm "https://christitus.com/win" | iex
 
 [Give you option to remove: Copilot, MS Edge, etc. Also give you install option for software like: Firefox, PDF reader.]
+
+31. Share files between Windows and Linux over same network.
+
+- Install WinSCP	// Avilable in Windows. For Linux, install "Filezilla".
+- Add site		// Using SFTP, IP, username and password of another OS
+- Save session		// For future, if you don't want to re-login
+
+[ Now you will have two window (with Guest OS and Host OS) for sharing the files using TUI session.]
+
+32.
