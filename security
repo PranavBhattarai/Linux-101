@@ -79,6 +79,11 @@ or
 
 8. Antivirus for Linux!
 
-sudo freshclam		// To update "clamscan" datebase
-clamscan <path>		// To scan
-clamscan -r <path>	// To scan all files that are in all folder
+sudo freshclam			// To update "clamscan" datebase
+clamscan <path>			// To scan
+clamscan -r <path>		// To scan all files that are in all folder
+clamscan -r --move=<path>	// To scan and automatically move suspected file
+
+[--remove parameter will automatically delete suspectetd file. Do it at your own risk]
+
+9.
