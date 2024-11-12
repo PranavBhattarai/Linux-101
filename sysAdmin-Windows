@@ -73,8 +73,8 @@ or,
 - net user <old/new-username> <new-password>				// Commmand to create new password for given username
 - Voila. 
 
-[Tested on Windows 10, it worked.]
-
+[Tested on Windows 10, it worked. Use "quotation mark" if userename have space on it.]
+		
 or,
 	If two user are in same computer, then admin user can change the password:
 

@@ -76,3 +76,9 @@ or
 	ip route delete <ip>/cidr dev eth0
 
 [For advance blocking, use bash script. For persistent blocking, add commands to /etc/rc.local file. Learn, "fail2ban".]
+
+8. Antivirus for Linux!
+
+sudo freshclam		// To update "clamscan" datebase
+clamscan <path>		// To scan
+clamscan -r <path>	// To scan all files that are in all folder
