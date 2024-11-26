@@ -111,4 +111,12 @@ Step 2:
 
 [Still blocked? Then try "sudo setenforce 1" to temporarily disable SELinux and renable using "sudo setenforce 0"]
 
-10. 
+10.	Who is accessing your Linux system via SSH? 
+	Who is trying to but failing to access your system via SSH? 
+	If someone cannot access the system via SSH, why is that?
+ans:
+	sudo journalctl -u ssh
+
+[Not tested yet. Looks cool though.]
+
+11.
