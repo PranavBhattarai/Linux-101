@@ -119,4 +119,12 @@ ans:
 
 [Not tested yet. Looks cool though.]
 
-11.
+11. Allow computer A incoming traffic on computer B:	// Let say we want to allow SSH traffic.
+
+# In computer B:
+	sudo iptables -A INPUT -p TCP -s <Computer_A_IP> --dport 22 -j ACCEPT
+
+[Port 22 is SSH port. Port 80 is HTTP port.]
+
+12.
+
