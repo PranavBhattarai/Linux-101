@@ -1,0 +1,18 @@
+[Simple DevOps project to practice AWS]
+
+1) Create EC2 instance
+2) Configure security groups to:
+      2.1) allow SSH access only from your IP 
+      2.2) allow HTTP/HTTPS access from anywhere
+3) Configure EC2 user-data to pre-install Docker on machine
+4) Configure EC2 IAM role to:
+     4.1) Allow access from EC2 to S3 bucket
+     4.2) Allow access from EC2 to AWS ECR
+5) Create ECR and push Docker image
+6) SSH into EC2 and pull Docker image from ECR
+7) Configure AWS CloudWatch to monitor EC2 instance CPU metrics
+8) Create CloudWatch Alarm when EC2 instance CPU is over 80%
+
+#Doing this will cover basics of: EC2, ECR, S3, IAM, and CloudWatch.
+
+[]
