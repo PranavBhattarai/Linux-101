@@ -102,4 +102,10 @@ sudo firewall-cmd --reload
 
 [Learned something while trying to enable "tftp" service.]
 
-13.
+13. Wget
+
+wget -c <download link>		// will continue download from where it left
+
+[learn more wget command]
+
+14.

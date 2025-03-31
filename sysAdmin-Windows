@@ -133,8 +133,8 @@ netsh wlan show profile = "wifi-name" | findstr Key	// show the password only of
 
  Part I:
 	chkdsk /r						// r = repair
-	DISM /Online /Cleanup-Image /ScanHealth			// DISM = Deployment Image Servicing and Management 
-	DISM /Online /Cleanup-Image /RestoreHealth
+	DISM /Online /Cleanup-Wim				// DISM = Deployment Image Servicing and Management 
+	DISM /Online /Cleanup-........?				// new option has been introduced
 	sfc /scannow						// SFC = System File Checker
 
  Part II:
@@ -304,4 +304,10 @@ Enable -> Always show icons, never thumbnails		// Open File Explorer Options
 
 [ Now you will have two window (with Guest OS and Host OS) for sharing the files using TUI session.]
 
-32.
+32. Hide Network Icon from Status Bar
+
+- Open regedit
+	HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator
+
+- Create 32 bit DWORD
+	......
