@@ -127,6 +127,8 @@ find . -type d -empty -delete
 
 	qemu-img convert -f vmdk -O qcow2 disk1.vmdk /var/lib/libvirt/images/disk1.qcow2
 	qemu-img convert -f vmdk -O qcow2 disk2.vmdk /var/lib/libvirt/images/disk2.qcow2
+or,
+	qemu-img convert -f raw -O qcow2 <file-name>.iso <file-name>.qcow2			// To convert ISO file
 
 - Open VirtManager
 - Add New VM
