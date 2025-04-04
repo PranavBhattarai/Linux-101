@@ -311,3 +311,11 @@ Enable -> Always show icons, never thumbnails		// Open File Explorer Options
 
 - Create 32 bit DWORD
 	......
+
+33. Bypass Windows 11 sign-in account creating
+
+	start ms-cxh:localonly			// Run it under administrative previledge
+
+[MS started forcing users to create account. This command will let user create a local account.]
+
+34.
