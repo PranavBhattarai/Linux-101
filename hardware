@@ -6,4 +6,13 @@
 	- Could be RAM issue?
 	- Could be SSD/HDD issue?
 
-[ ]
+[Note:  ]
+
+2. Dell Power Blinking states should be normal.		Normal -> Only White blink.
+
+	- 3 Amber blinks + 1 white blink (Code 3,1)	-> In Optiplex series, this could be BIOS battery being dead.
+	- 
+
+[Note: ]
+
+3.
