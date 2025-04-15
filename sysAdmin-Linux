@@ -108,4 +108,9 @@ wget -c <download link>		// will continue download from where it left
 
 [learn more wget command]
 
-14.
+14. Check bad sectors
+
+sudo fdisk -l					// To list all disk
+sudo badblocks -v /dev/sda<> > badsectors.txt	// <> is where you write drive number
+sudo e2fsck -l badsectors.txt /dev/sda<>	// Mark bad sectors as Unusable. In EXT filesystem
+sudo fsck -l badsectors.txt /dev/sda<>		// Mark bad sectors as Unusable. In other filesystem
