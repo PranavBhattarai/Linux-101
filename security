@@ -86,4 +86,14 @@ clamscan -r --move=<path>	// To scan and automatically move suspected file
 
 [--remove parameter will automatically delete suspectetd file. Do it at your own risk]
 
-9.
+9. Gmail Tags. Disguising the real email from getting its data sold to advertisers.
+
+Let's say my email address is:	
+				pranav@gmail.com
+
+I can use, tags to hide my original email, and would still get mail in my original email.
+For example:
+		pranav+facebook@gmail.com
+		
+[Note: This isn't a bullet-proof method of achieving privacy. Since advertiser could auto-trim tags these days. So...]
+
