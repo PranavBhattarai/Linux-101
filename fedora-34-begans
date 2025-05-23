@@ -19,7 +19,7 @@ sudo dnf install rpmconf
 sudo rpmconf -a
 sudo dnf install remove-retired-packages
 remove-retired-packages
-sudo dnf repoquery --unsatisfied					//list of packages with broken dependencies
+sudo dnf repoquery --unsatisfied					[ No longer works since new DNF. Tested on F42 ]
 sudo dnf repoquery --duplicates
 sudo dnf autoremove
 sudo dnf remove $(dnf repoquery --extras)				//observe it and carefully remove packages which u don't need
