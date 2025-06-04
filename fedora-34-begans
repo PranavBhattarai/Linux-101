@@ -410,4 +410,10 @@ env | grep XDG_SESSION_TYPE
 
 [The output is either Wayland, or X11. Prefer Wayland if your display supports it.]
 
-65.
+65. Fixing boot issue in Fedora due to kernel crash		// Heavely varies on what you did in past unknowly
+
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg			// update the grub's boot menu
+
+[This fixes only if you can boot the kernel which doesn't crash.]
+
+66.
