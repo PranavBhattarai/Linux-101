@@ -133,8 +133,9 @@ netsh wlan show profile = "wifi-name" | findstr Key	// show the password only of
 
  Part I:
 	chkdsk /r						// r = repair
-	DISM /Online /Cleanup-Wim				// DISM = Deployment Image Servicing and Management 
-	DISM /Online /Cleanup-........?				// new option has been introduced
+	DISM /Online /cleanup-image /checkhealth		// DISM = Deployment Image Servicing and Management 
+	DISM /Online /cleanup-image /scanhealth
+	DISM /Online /cleanup-image /restorehealth
 	sfc /scannow						// SFC = System File Checker
 
  Part II:
@@ -143,7 +144,17 @@ netsh wlan show profile = "wifi-name" | findstr Key	// show the password only of
 	bootrec /FixBoot 
 	bootrec /RebuildBcd
 
+ Part III:							// Only if Part II failed due to permission or
+	bcdboot C:\Windows /s H: /f uefi			// "H" is assigned drive letter for EFI partition.
+
 [ To use DISM command is used with "/Online" parameter, you need internet connection.]
+
+Note:
+	bcdedit					// To see current BCD implementation
+	bcdedit /export C:\bcd.backup		// To backup current BCD implementation if incase we need to rollback
+	bcdedit /import C:\bcd.backup		// To import previous BCD configuration
+
+[It is good idea to backup bcd files if in case we to roll back on the mess we might created.]
 
 11. Launch the "Advance Startup Repair" 
 
