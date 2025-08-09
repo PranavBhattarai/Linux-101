@@ -416,4 +416,10 @@ sudo grub2-mkconfig -o /boot/grub2/grub.cfg			// update the grub's boot menu
 
 [This fixes only if you can boot the kernel which doesn't crash.]
 
-66.
+66. Change the default ALT buttom behaviour:
+
+gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
+
+[This will make Alt+Tab behaviour to switch between application without grouping them.]
+
+67.
