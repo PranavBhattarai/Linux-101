@@ -39,6 +39,11 @@ or,
 [Note: PCs need to be in same network in order to achieve this.]
 [Note: Change the network profile from "Public" to "Private". 	       Setting > Network & Internet > Ethernet or Wifi > Private    ]
 
+Also try using this command:
+
+	netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes
+	netsh advfirewall firewall set rule group="Network Discovery" new enable=Yes
+
 
 3. File/Folder sharing in same Network		(aka, Public Shared Folder ]	[aka, Network Drive]
 
