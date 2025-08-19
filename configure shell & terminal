@@ -1,10 +1,19 @@
-1. Create alacritty.yml file inside ~/.config/alacritty
+1. Create alacritty.toml file inside ~/.config/alacritty
 
 2. Install npm for Alacritty themes & run
-npx alacritty-themes --create				//optional
-npx alacritty-themes					//select themes
-I prefer Dracula theme.			
-Now you can uninstall npm if you want.
+
+	npx alacritty-themes --create			//optional
+	npx alacritty-themes				//select themes
+
+	I prefer Dracula theme.				// Now you can uninstall npm if you want.
+
+OR,
+	mkdir ~/.config/alacritty/themes		// create a "themes" directory
+							// Put "theme-name.toml" file in this directory
+	write:	
+		import = [
+			"~/.config/alacritty/themes/<theme-name>.toml"
+		]
 
 3. Alacritty configurations
 # Alacritty background opacity, write:
