@@ -422,4 +422,26 @@ gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
 
 [This will make Alt+Tab behaviour to switch between application without grouping them.]
 
-67.
+67. Change the default shell of the "user"     ( and of "root" user if needed)
+
+	sudo chsh -s "shell-location" "username"
+example:
+	sudo chsh -s /usr/bin/fish shivoham	// For a user
+	sudo chsh -s /usr/bin/fish		// For root user
+
+[Leave the root user for bash for security reason but not necessarily cirtical.]
+
+68. How to create or delete environment variable for user and root?
+
+	sudo nano /etc/environment
+Or,
+	Example:
+		systemctl --user set-environment LIBVA_DRIVER_NAME=iHD
+
+[iF YOU REMOVE "--user" parameter, it will set it for root/everyone.]
+
+		systemctl --user unset-environment LIBVA_DRIVER_NAME=iHD
+
+[iF you want to Remove the environment variable]
+
+69.
