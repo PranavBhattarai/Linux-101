@@ -36,10 +36,16 @@ or,
 - File Manager -> Network -> Select Computer 1				// Right click on Network and hit Refresh if nothing appears
 - Right click on printer  -> Connect
 
-[Note: PCs need to be in same network in order to achieve this.]
+[Note: PCs need to be in same network in order to achieve this.	In other words, should able to ping eachother.]
 [Note: Change the network profile from "Public" to "Private". 	       Setting > Network & Internet > Ethernet or Wifi > Private    ]
 
-Also try using this command:
+[Also]
+	HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print	// Win + R = regedit; navigate to this location.
+	RpcAuthnLevelPrivacyEnabled					// Name of DWord
+	0								// Value of DWord
+	Restart the PC.
+
+[Optional command]
 
 	netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes
 	netsh advfirewall firewall set rule group="Network Discovery" new enable=Yes
@@ -152,7 +158,7 @@ netsh wlan show profile = "wifi-name" | findstr Key	// show the password only of
  Part III:							// Only if Part II failed due to permission or
 	bcdboot C:\Windows /s H: /f uefi			// "H" is assigned drive letter for EFI partition.
 
-[ To use DISM command is used with "/Online" parameter, you need internet connection.]
+[ To use DISM command with "/Online" parameter, you need internet connection.]
 
 Note:
 	bcdedit					// To see current BCD implementation
