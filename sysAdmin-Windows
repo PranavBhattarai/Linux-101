@@ -318,6 +318,14 @@ Enable -> Always show icons, never thumbnails		// Open File Explorer Options
 
 [Give you option to remove: Copilot, MS Edge, etc. Also give you install option for software like: Firefox, PDF reader.]
 
+OR,
+
+- Run this script that remove almost every bloat that comes with Windows 11:
+
+	& ([scriptblock]::Create((irm "https://debloat.raphi.re/")))
+
+[In each new major Windows 11 update, everything that is removed; comes back. So re-run the script in such update.]
+
 31. Share files between Windows and Linux over same network.
 
 - Install WinSCP	// Avilable in Windows. For Linux, install "Filezilla".
