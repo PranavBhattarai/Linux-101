@@ -348,4 +348,11 @@ OR,
 
 [MS started forcing users to create account. This command will let user create a local account.]
 
-34.
+34. Computer / OS not recognizing connected printer.
+
+- Make sure to install updated version of the driver	// Use "Driver Booster" or offical OEM website to download new driver
+- Make sure to install correct driver
+
+[Some printer like Canon won't response to the computer even if the driver is installed or plugged in simply because driver is old.]
+
+35.
