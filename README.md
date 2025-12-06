@@ -10,7 +10,6 @@ This is <b><i>just</i></b> a backup if incase it gets lost.
 ### Communities I follow/ask around if I don't know something.
 
 - [Askubuntu](https://askubuntu.com/users/983639/pranav)
-- [Reddit](https://www.reddit.com/user/Arunzeb)
 - [FedoraProject](https://ask.fedoraproject.org/u/bond)
 
 ### Give insight on some Opensource projects which I like:
