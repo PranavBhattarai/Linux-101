@@ -126,9 +126,10 @@ ans:
 
 [Port 22 is SSH port. Port 80 is HTTP port.]
 
-12. Run Cambiun AP commands from Cambium webportals using Remote CLI
+12. Weak SSH security policy in switch image resulting client's OS rejecting, a fix:
 
-ex:	
-	.....
- 
+	ssh -v -o KexAlgorithms=+diffie-hellman-group1-sha1 -o Ciphers=+aes128-cbc,3des-cbc <username>@<password>
 
+[My Fedora Workstation to connect with Cambium Switch image being old.]
+
+13.
