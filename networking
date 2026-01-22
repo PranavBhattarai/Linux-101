@@ -126,5 +126,9 @@ ans:
 
 [Port 22 is SSH port. Port 80 is HTTP port.]
 
-12.
+12. Run Cambiun AP commands from Cambium webportals using Remote CLI
+
+ex:	
+	.....
+ 
 
