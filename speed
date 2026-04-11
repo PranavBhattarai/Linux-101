@@ -1,28 +1,29 @@
-/- A research to speed up the process. ANY process-\
+1. Google Dorking		// A mechanism to search anything from Google.	
 
-1. Google search tricks 
+	i.How to google "pranav" in such a we don't get famous 'pranav mukherjee'
 
-i.How to google "pranav" in such a we don't get famous 'pranav mukherjee'
-
-pranav -mukherjee		// here minus will remove search results which include 'mukherjee'
+	pranav -mukherjee		// here minus will remove search results which include 'mukherjee'
 
 `````````````````````````````````````````````````````````````````````````````````````````````````````
-ii. How to search two terms?
+	ii. How to search two terms?
 
-	pranav AND bhattarai		//the use of AND operator
-or
-	"pranav" "bhattarai"
+		pranav AND bhattarai		//the use of AND operator
+	or
+		"pranav" "bhattarai"
 
 `````````````````````````````````````````````````````````````````````````````````````````
-iii. How to search forgotten word but sitll knows the phrase?
+	iii. How to search forgotten word but sitll knows the phrase?
 
-	"learn * languague in 3 months"
+		"learn * languague in 3 months"
 
-iv. Search file type instead of web page.
+``````````````````````````````````````````````````````````````````````````````````````````
+	iv. Search file type instead of web page.
 
 	filetype:pdf ccna labs			//will search all pdf avaiable for CCNA labs
 
-v. Search on specific website.
+`````````````````````````````````````````````````````````````````````````````````````````````
+
+	v. Search on specific website.
 
 	site:freecodecamp.org rust		//will give all search result from FreeCodeCamp website about Rust.
 
@@ -176,7 +177,7 @@ qemu-img convert xxx.iso xxx.qcow2			// xxx is just the random name given to as 
 
 ----------------------------------------------------------------------------------------------------------------
 
-14. Close all Firefox windows at Once since you might what to open ALLFirefox windows at once tomorrow
+14. Close all Firefox windows at Once since you might what to open ALL Firefox windows at once tomorrow
 
 Ctrl + Q
 
