@@ -42,4 +42,4 @@ To remove OS from Windows boot configuration:
 
 [At which point the Linux drivers & fsck can deal with the drives just fine.]
 
-6.
+6. [
