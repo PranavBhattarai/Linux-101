@@ -444,4 +444,14 @@ Or,
 
 [iF you want to Remove the environment variable]
 
-69.
+69. Add user in "group" so user can have all permission required in sepecialed app:
+
+	cat /etc/group					// To see if application have group
+
+	sudo usermod -a -G <group-name> <user-name>
+example:
+	sudo usermod -a -G wireshark shivoham
+
+[By does so, the user don't need to run entire GUI application in "sudo".]
+
+70.
