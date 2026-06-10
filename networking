@@ -132,4 +132,10 @@ ans:
 
 [My Fedora Workstation to connect with Cambium Switch image being old.]
 
-13. 
+13. Simple Curl command to know public IP
+
+curl icanhazip.com
+
+[There are many other ways. This is just one of the ways.]
+
+
