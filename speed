@@ -183,4 +183,11 @@ Ctrl + Q
 
 [I know this is quite basic thing I just found out, yet it does save a lot of my time since I use Firefox all the time.]
 
-15.
+15. Sed						// A powerfull file editior
+
+sed -i 's/prabesh/pranav/g' resume		//'g' indicate global occurance. i.e not only first occurance.
+						//'s' indicate subtitue i.e. find & replace.
+
+[Replace, all occurance of "prabesh" by "pranav" in a file named "resume".]
+
+16.
