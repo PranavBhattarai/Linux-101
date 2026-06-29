@@ -97,3 +97,8 @@ For example:
 		
 [Note: This isn't a bullet-proof method of achieving privacy. Since advertiser could auto-trim tags these days. So...]
 
+10. Query DNS using best one for privacy that doesn't compromise speed:
+
+	- Open Firefox network setting and paste: https://dns.adguard.com/dns-query
+
+[For indepth understanding & DNS benchmarking : https://evilbit.de/dns-resolver-guide.html ]
