@@ -132,4 +132,10 @@ ans:
 
 [My Fedora Workstation to connect with Cambium Switch image being old.]
 
-13. 
+13. Seleting the interface for ping
+
+ping -I <interface-name> <ipaddress or website>
+
+[Handfull when you have multiple interface but when you want to use particular interface to test]
+
+14.

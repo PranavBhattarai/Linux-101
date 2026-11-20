@@ -142,6 +142,8 @@ or,
 - Select: Select disk2.qcow image
 - Select: Finish  -> Begin Installation
 
+	qemu-img resize <os-name>.qcow2 <size>		// To change the disk image if required
+
 [The difference to run qcow image and iso image is huge; since it support KVM which VirtManager supports.]
 
 11. Know your location temprature.
